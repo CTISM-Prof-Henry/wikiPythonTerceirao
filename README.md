@@ -8,6 +8,28 @@ Wiki de Python do terceiro ano de Técnico em Informática para Internet Integra
 ![terceirao](images/terceirao.jpg)
 
 
+## Grupos & tópicos
+
+| Grupo | Tópico |
+|:------|:-------|
+| Ana, Camille, Luísa | Números, expressões aritméticas, formatação de strings, comando pass |
+| Karyna, Maria Eduarda Desconci, Thiaiane | Controle de fluxo: if, else, elif |
+| Diogo, João Pedro, Thaylor | Laços de repetição: while, for, função range, break, continue |
+| Isadora, Nicole, Maria Luiza | Estrutura de dados: listas, list comprehension, métodos da classe lista, operadores and, or, in, not in para listas |
+| Bruno, Luize, Gianna | Estrutura de dados: tuplas, sets, operadores and, or, in, not in para tuplas/sets |
+| Pedro, Guilherme Fensterseifer | Estrutura de dados: dicionáros, construção de dicionários, iteração sobre dicionários, operadores and, or, in, not in para dicionários |
+| Liza, Aline | Funções: definindo funções, funções com parâmetros padrão, argumentos nomeados, strings de documentação |
+| Gabriel, Luiz Felipe, Kamilla | Funções: parâmetros especiais, funções anônimas, listas de argumentos arbitrárias |
+| Maria Eduarda Lencina, Pâmela, Patrick | Leitura e escrita de arquivos, método with, biblioteca csv, Gravando dados estruturados com json | 
+| Miguel Ávila, Nicolas, Tales | Exceções |
+| Davi, Guilherme Einloft, Miguel Brondani | Classes: sintaxe de definição de calsses, objetos de class, objetos instância, objetos método, variáveis de classe e instância, observações aleatórias |
+
+## Não-atribuídos
+
+1. Classes: herança múltipla, variáveis privadas, geradores
+2. Módulos
+3. Pacotes
+
 ## Exemplo de Wiki
 
 ### Sumário
