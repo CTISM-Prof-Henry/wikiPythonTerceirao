@@ -85,10 +85,10 @@ Depois eu faço.
 
 Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
 
-Sua estrutura é:
-    `try:`
+Sua estrutura é: <br>
+* `try:`
         Alguma coisa que pode dar erro
-    `except` *Tipo do erro*:
+* `except` *Tipo do erro*:
         O que fazer caso o erro aconteça
 
 #### Resumo expandido
