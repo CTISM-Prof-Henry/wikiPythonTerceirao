@@ -36,6 +36,7 @@ Wiki de Python do terceiro ano de Técnico em Informática para Internet Integra
 
 1. [Introdução](#introdução)
 2. [if-else](#if-else)
+3. [Exceções](#exceções)
 
 ### Introdução
 
@@ -76,3 +77,29 @@ Fiquei com preguiça de fazer.
 #### Resolução
 
 Depois eu faço.
+
+<!-- comentario apenas para dividir do resto, atenção, area restrita -->
+### Exceções
+
+#### Resumo simplificado
+
+Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
+
+Sua estrutura é:
+    `try:`
+        Alguma coisa que pode dar erro
+    `except` *Tipo do erro*:
+        O que fazer caso o erro aconteça
+
+#### Resumo expandido
+
+Depois eu faço.
+
+#### Exercícios
+
+Depois eu faço.
+
+#### Resolução
+
+Depois eu faço.
+<!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
