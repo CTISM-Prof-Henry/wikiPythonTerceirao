@@ -86,10 +86,12 @@ Depois eu faço.
 Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
 
 Sua estrutura é: <br>
-- `try:` <br>
- - Alguma coisa que pode dar erro <br>
-- `except` *Tipo do erro*: <br>
- - O que fazer caso o erro aconteça
+~~~python
+try:
+    print("estamos tentando")
+except:
+    print("não deu, estamos tratando")
+~~~
 
 #### Resumo expandido
 
