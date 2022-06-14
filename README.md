@@ -160,5 +160,28 @@ def func():
 
 ~~~~
 
+#### exercicios 
+
+1. faça um programa o qual pede a idade de uma pessoa, se ela for maior de idade (18 anos ou maior), mostre na tela "o cadastro foi realizado", se ela tiver menos que 18 anos, mostre na tela "não foi possivel efetuar o cadastro"
+
+##### resolução:
+
+~~~~python
+
+~~~~
+
+2. faça um programa o qual peça o valor de três números e mostre o menor deles
+
+##### resolução:
+
+~~~~python
+
+~~~~
+
+3. faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso nao seja nenhuma das duas opçoes (caso seja 0), mostre a mensagem "o numero digitado é (numero digitado)" (utilize else)
+
+~~~~python
+
+~~~~
 
 <!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
