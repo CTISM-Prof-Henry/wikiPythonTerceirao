@@ -35,7 +35,7 @@ Wiki de Python do terceiro ano de Técnico em Informática para Internet Integra
 ### Sumário
 
 1. [Introdução](#introdução)
-2. [Fluxo](#fluxo )
+2. [Fluxo](#fluxo)
 3. [Exceções](#exceções)
 
 ### Introdução
@@ -128,6 +128,7 @@ def func():
 #### elif
 
 Utiliza-se o elif com mesmo intuito do if, porem ele significa uma segunda exceção.
+Sua estrutura é:
 
 ~~~~python
 def func():
@@ -145,6 +146,7 @@ def func():
 #### else
 
 Quando nenhum comportamento específico foi definido para o caso de a condição não ser satisfeita, utiliza-se a estrutura else.
+Sua estrutura é:
 
 ~~~~python
 def func():
@@ -164,7 +166,7 @@ def func():
 
 #### exercicios 
 
-1. faça um programa o qual pede a idade de uma pessoa, se ela for maior de idade (18 anos ou maior), mostre na tela "o cadastro foi realizado", se ela tiver menos que 18 anos, mostre na tela "não foi possivel efetuar o cadastro"
+1. faça um programa o qual peça o valor de três números e mostre o menor deles
 
 ##### resolução:
 
@@ -172,7 +174,7 @@ def func():
 
 ~~~~
 
-2. faça um programa o qual peça o valor de três números e mostre o menor deles
+2. faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso nao seja nenhuma das duas opções (seja 0), mostre a mensagem "o numero digitado é (numero digitado)" (utilize else)
 
 ##### resolução:
 
@@ -180,7 +182,9 @@ def func():
 
 ~~~~
 
-3. faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso nao seja nenhuma das duas opçoes (caso seja 0), mostre a mensagem "o numero digitado é (numero digitado)" (utilize else)
+3. faça um programa que peça o numero de episodios que o usuario assistiu do programa do ratinho. Se o usuario tiver assistido até 25 episódios, mostre na tela a mensagem "RAPAIZ", se assistiu ate 50, mostre a mensagem "UEPAA", se assistiu mais que 50, exiba a mensagem "RATINHOO"
+
+##### resolução:
 
 ~~~~python
 
