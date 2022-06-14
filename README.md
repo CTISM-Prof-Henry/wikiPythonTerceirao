@@ -35,7 +35,7 @@ Wiki de Python do terceiro ano de Técnico em Informática para Internet Integra
 ### Sumário
 
 1. [Introdução](#introdução)
-2. [if-else](#if-else)
+2. [controle de fluxo](#controle-de-fluxo:-if-else-e-elif )
 3. [Exceções](#exceções)
 
 ### Introdução
@@ -104,6 +104,8 @@ Depois eu faço.
 #### Resolução
 
 Depois eu faço.
+
+<!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
 
 
 ### controle de fluxo: if else e elif 
