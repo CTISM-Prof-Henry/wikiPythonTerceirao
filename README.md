@@ -107,4 +107,58 @@ Depois eu faço.
 
 
 ### controle de fluxo: if else e elif 
+
+#### if 
+
+O if é uma estrutura de condição que permite avaliar uma expressão e, de acordo com seu resultado, executar uma determinada ação.
+Sua estrutura é:
+
+~~~~python
+def func():
+	a = int(input('insira valor de A')) # capta um valor para A
+	b = int(input('insira valor de B')) #capta um valor para B
+
+	if b > a: # SE b for maior que A executa o comando
+		print('B é maior que A') 
+
+~~~~
+
+#### elif
+
+Utiliza-se o elif com mesmo intuito do if, porem ele significa uma segunda exceção.
+
+~~~~python
+def func():
+	a = int(input('insira valor de A'))
+	b = int(input('insira valor de B'))
+
+	if b > a:
+		print('B é maior que A')
+
+	elif a > b: # OU SE a for maior que b executa o comando
+		print('A é maior que B')
+
+~~~~
+
+#### else
+
+Quando nenhum comportamento específico foi definido para o caso de a condição não ser satisfeita, utiliza-se a estrutura else.
+
+~~~~python
+def func():
+	a = int(input('insira valor de A'))
+	b = int(input('insira valor de B'))
+
+	if b > a:
+		print('B é maior que A')
+
+	elif a > b:
+		print('A é maior que B')
+
+	else: # SENAO executar nenhum comando acima, executar o seguinte
+		print('A é igual a B') #igual pois if e elif analisa os valores diferentes
+
+~~~~
+
+
 <!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
