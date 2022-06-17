@@ -1,12 +1,17 @@
 # wikiPythonTerceirao
 Wiki de Python do terceiro ano de Técnico em Informática para Internet Integrado ao Ensino Médio do Colégio Técnico Industrial de Santa Maria. Turma de 2022.
 
-
-
 ## Do terceirão pra vida!
 
 ![terceirao](images/terceirao.jpg)
 
+# Descrição do trabalho
+
+https://ead06.proj.ufsm.br/mod/assign/view.php?id=1649675
+
+# Problemas resolvendo conflitos no git? 🤠
+
+Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
 ## Grupos & tópicos
 
