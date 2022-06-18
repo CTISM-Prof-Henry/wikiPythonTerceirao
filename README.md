@@ -41,7 +41,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
 1. [Introdução](#introdução)
 2. [Fluxo](#fluxo)
-3. [Exceções](#exceções)
+3. [Exceções](groups/excecoes.md)
 
 ### Introdução
 
@@ -166,33 +166,5 @@ def func():
 ~~~~python
 
 ~~~~
-
-<!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
-
-### Exceções
-
-#### Resumo simplificado
-
-Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
-
-Sua estrutura é: <br>
-~~~python
-try:
-    print("estamos tentando")
-except:
-    print("não deu, estamos tratando")
-~~~
-
-#### Resumo expandido
-
-Depois eu faço.
-
-#### Exercícios
-
-Depois eu faço.
-
-#### Resolução
-
-Depois eu faço.
 
 <!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
