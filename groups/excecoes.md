@@ -1,6 +1,6 @@
-### Exceções
+## Exceções
 
-#### Resumo simplificado
+### Resumo simplificado
 
 Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
 
@@ -12,14 +12,14 @@ except:
     print("não deu, estamos tratando")
 ~~~
 
-#### Resumo expandido
+### Resumo expandido
 
 Depois eu faço.
 
-#### Exercícios
+### Exercícios
 
 Depois eu faço.
 
-#### Resolução
+### Resolução
 
 Depois eu faço.
