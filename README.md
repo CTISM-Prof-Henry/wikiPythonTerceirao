@@ -40,7 +40,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 ### Sumário
 
 1. [Introdução](#introdução)
-2. [Fluxo](#fluxo)
+2. [Fluxo](groups/fluxo.md)
 3. [Exceções](groups/excecoes.md)
 
 ### Introdução
