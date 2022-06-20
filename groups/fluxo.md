@@ -1,7 +1,8 @@
 ### Fluxo
 
 #### Resumo simplificado: 
-as estruturas de decisão definem uma exceção por meio do comando dado. São usadas quando o usuário deseja definir um tipo especifico de seleção, ou exclusão.    
+
+Em python o programa deve ser capaz de tomar decisões baseadas em comandos anteriores, a estrutura de decisão vai checar uma condição. Se a mesma for dada como verdadeira,  executa-se o comando dado, o código que está dentro dela. Existem 3 tipos, if, else e elif
 
 #### if 
 
@@ -20,7 +21,7 @@ def func():
 
 #### elif
 
-Utiliza-se o elif com mesmo intuito do if, porem ele significa uma segunda exceção.
+O elif apenas é checado caso o anterior for dado como falso, porém trabalha como o mesmo
 Sua estrutura é:
 
 ~~~~python
@@ -38,7 +39,7 @@ def func():
 
 #### else
 
-Quando nenhum comportamento específico foi definido para o caso de a condição não ser satisfeita, utiliza-se a estrutura else.
+Se nenhuma das condições anteriores constadas em if ou elif forem satisfeitas, o else executa o comando dado em sua estrutura
 Sua estrutura é:
 
 ~~~~python
@@ -57,9 +58,9 @@ def func():
 
 ~~~~
 
-#### exercicios 
+#### exercícios 
 
-1. faça um programa o qual peça o valor de três números e mostre o menor deles
+1. Faça um programa o qual peça o valor de três números e mostre o menor deles
 
 ##### resolução:
 
@@ -81,7 +82,7 @@ func()
 
 ~~~~
 
-2. faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso nao seja nenhuma das duas opções (seja 0), mostre a mensagem "o numero digitado é (numero digitado)" (utilize else)
+2. Faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso não seja nenhuma das duas opções (seja 0), mostre a mensagem "o número digitado é (numero digitado)" (utilize else)
 
 ##### resolução:
 
@@ -101,7 +102,7 @@ func()
 
 ~~~~
 
-3. faça um programa que peça o numero de episodios que o usuario assistiu do programa do ratinho. Se o usuario tiver assistido até 25 episódios, mostre na tela a mensagem "RAPAIZ", se assistiu ate 50, mostre a mensagem "UEPAA", se assistiu mais que 50, exiba a mensagem "RATINHOO"
+3. Faça um programa que peça o número de episódios que o usuário assistiu do programa do ratinho. Se o usuário tiver assistido até 25 episódios, mostre na tela a mensagem "RAPAIZ", se assistiu até 50, mostre a mensagem "UEPAA", se assistiu mais que 50, exiba a mensagem "RATINHOO"
 
 ##### resolução:
 
