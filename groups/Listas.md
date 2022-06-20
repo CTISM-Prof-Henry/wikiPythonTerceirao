@@ -1,4 +1,4 @@
-##MÉTODOS DA CLASSE LISTA:
+## MÉTODOS DA CLASSE LISTA:
 ### Descrição simplificada:
 É um método que está contido na lista
 
@@ -64,7 +64,7 @@ lista1 = ['banana', 'maçã', 'kiwi']
 lista1.sort()
 ~~~~
 
-##LIST COMPREHENSION: 
+## LIST COMPREHENSION: 
 ### Descrição simplificada: 
 Cria e manipula listas para otimizar o código.
 
