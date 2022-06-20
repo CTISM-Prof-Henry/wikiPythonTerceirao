@@ -17,7 +17,7 @@ except:
 
 Depois eu faço.
 
-##Variáveis de classe e instância
+## Variáveis de classe e instância
 
 ### Resumo Simplificado
 Variável de Classe:
