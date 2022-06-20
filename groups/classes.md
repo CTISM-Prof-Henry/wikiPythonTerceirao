@@ -17,10 +17,17 @@ except:
 
 Depois eu faço.
 
-### Exercícios
+##Variáveis de classe e instância
 
-Depois eu faço.
+### Resumo Simplificado
+Variável de Classe:
+Variável comum para todas as instâncias da classe. Recomendado ser dados imutáveis
 
-### Resolução
+Variável de Instância:
+Variável específica para cada objeto da classe.
 
-Depois eu faço.
+### Resumo Expandido
+
+## Exercícios
+
+## Resolução
