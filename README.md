@@ -42,6 +42,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 1. [Introdução](#introdução)
 2. [Fluxo](groups/fluxo.md)
 3. [Exceções](groups/excecoes.md)
+4. [Classes](groups/classes.md)
 
 ### Introdução
 
