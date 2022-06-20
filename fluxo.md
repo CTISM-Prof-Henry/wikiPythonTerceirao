@@ -1,5 +1,8 @@
 ### Fluxo
 
+#### Resumo simplificado: 
+as estruturas de decisão definem uma exceção por meio do comando dado. São usadas quando o usuário deseja definir um tipo especifico de seleção, ou exclusão.    
+
 #### if 
 
 O if é uma estrutura de condição que permite avaliar uma expressão e, de acordo com seu resultado, executar uma determinada ação.
