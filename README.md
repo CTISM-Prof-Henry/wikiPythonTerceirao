@@ -65,7 +65,7 @@ Sério, Python é muito 🔝
 2. Menu Iniciar > prompt de comando > digite `python` e dê Enter. Digite `print('olá mundo!')`. Feito!
 3. Menu Iniciar > prompt de comando. Digite `python <nome do script>`, e dê Enter.
 
-##[Estrutura de dados (Tuplas e sets)](groups/estruturas_de_dados_(tuplas_e_sets).md)
+## [Estrutura de dados (Tuplas e sets)](groups/estruturas_de_dados_(tuplas_e_sets).md)
 ### If-Else
 
 #### Resumo simplificado
