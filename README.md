@@ -40,8 +40,9 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 ### Sumário
 
 1. [Introdução](#introdução)
-2. [Fluxo](#fluxo)
+2. [Fluxo](groups/fluxo.md)
 3. [Exceções](groups/excecoes.md)
+4. [Classes](groups/classes.md)
 
 ### Introdução
 
@@ -65,6 +66,7 @@ Sério, Python é muito 🔝
 2. Menu Iniciar > prompt de comando > digite `python` e dê Enter. Digite `print('olá mundo!')`. Feito!
 3. Menu Iniciar > prompt de comando. Digite `python <nome do script>`, e dê Enter.
 
+## [Estrutura de dados (Tuplas e sets)](groups/estruturas_de_dados_(tuplas_e_sets).md)
 ### If-Else
 
 #### Resumo simplificado
