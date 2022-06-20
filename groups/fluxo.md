@@ -120,4 +120,4 @@ def func():
 func()
 ~~~~
 
-! [xaropinho](groups/xaropinho.png)
+![xaropinho](images/xaropinho.jpg)
