@@ -69,5 +69,5 @@ for pessoa in pessoas:
 
 Caractere | Significado
 ----------|----------------------------
-: 'r':    |  abre para leitura (padrão)
-:'w':     | abre para escrita, removendo tudo que está no mesmo
+'r'       |  abre para leitura (padrão)
+'w'       | abre para escrita, removendo tudo que está no mesmo
