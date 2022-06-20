@@ -64,6 +64,20 @@ def func():
 ##### resolução:
 
 ~~~~python
+def func():
+	a=int (input("insira o valor de a"))
+	b=int (input("insira o valor de b"))
+	c=int (input("insira o valor de c"))
+
+	if a<b and c:
+		print("o menor valor é %d" %a)
+	elif b<a and c:
+		print ("o menor valor é %d" %b)
+	else:
+		print ("o menor valor é %d" %c)
+
+func()
+
 
 ~~~~
 
@@ -73,6 +87,18 @@ def func():
 
 ~~~~python
 
+def func():
+	numero=int (input ("insira um numero"))
+
+	if numero>0:
+		print("o numero é positivo")
+	elif numero<0:
+		print("o numero é negativo")
+	else:
+		print("o numero digitado é %d " %numero)
+
+func()
+
 ~~~~
 
 3. faça um programa que peça o numero de episodios que o usuario assistiu do programa do ratinho. Se o usuario tiver assistido até 25 episódios, mostre na tela a mensagem "RAPAIZ", se assistiu ate 50, mostre a mensagem "UEPAA", se assistiu mais que 50, exiba a mensagem "RATINHOO"
@@ -80,5 +106,15 @@ def func():
 ##### resolução:
 
 ~~~~python
+def func():
+	ep=int (input ("insira o numero de episodios assistidos"))
 
+	if ep <=25:
+		print("RAPAIZ")
+	elif ep<=50:
+		print("UEPAA")
+	else:
+		print("RATINHOO")
+
+func()
 ~~~~
