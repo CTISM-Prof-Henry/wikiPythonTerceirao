@@ -187,3 +187,27 @@ disciplinas.pop()
 print(disciplinas[2::2])
 ~~~~
 
+### Exercício 2
+
+Dez lutadoras de Muay Thai inscreveram-se na categoria Peso Pena (Featherweight) - até 65kg -. Caso o peso ultrapasse o limite permitido na categoria, a lutadora é desclassificada da competição. Portanto, faça um programa que  verifique se há alguma lutadora desclassificada e indique a quantidade. 
+
+lutadoras = ['Márcia', 'Rafaela', 'Eduarda', 'Gabriela', 'Larissa', 'Isabela', 'Natália', 'Maria', 'Helena', 'Patrícia']
+
+pesos = [64.2, 74, 71.8, 57, 61, 54.3, 79, 42, 67, 55.6]
+
+**Resolução**
+
+~~~~python
+lutadoras = ['Márcia', 'Rafaela', 'Eduarda', 'Gabriela', 'Larissa', 'Isabela', 'Natália', 'Maria', 'Helena', 'Patrícia']
+
+pesos = [64.2, 74, 71.8, 57, 61, 54.3, 79, 42, 67, 55.6]
+
+quantidadeLutadoras = 0
+for i in range(0, len(lutadoras)):
+    if pesos[i] > 65:
+        quantidadeLutadoras = quantidadeLutadoras + 1
+
+print('A quantidade de lutadoras que não poderão participar da competição pois estão acima do peso é:', quantidadeLutadoras)
+~~~~
+
+
