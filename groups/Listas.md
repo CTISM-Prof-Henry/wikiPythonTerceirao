@@ -13,10 +13,17 @@ lista = []
 Para criar uma lista com valores, que podem ser de tipos diferentes:
 
 ~~~~ python
-lista = [‘abacaxi’, ‘pêra’, 2022]
+lista = ['abacaxi', 'pêra', 2022]
 ~~~~
 
 A string ‘abacaxi’ encontra-se no índice 0, já ‘2022’ encontra-se no índice 2.
+
+Para transformar uma tupla ou conjunto em uma lista aplica-se a função **list()**:
+
+~~~~python
+tupla = ('morango', 'pêra', 'damasco')
+lista = list(tupla)
+~~~~
 
 Para percorrer a lista:
 
@@ -76,11 +83,11 @@ multiplicacao = lista1 * 3
 ~~~~~
 
 
-## MÉTODOS DA CLASSE LISTA:
-### Descrição simplificada:
+## MÉTODOS DA CLASSE LISTA
+### Descrição simplificada
 É um método que está contido na lista
 
-### Descrição detalhada:
+### Descrição detalhada
 
 Incluir itens ao final da lista: nesse caso é usado o **.append(valor)**, em que valor é o novo valor.
 Exemplo:
@@ -124,7 +131,7 @@ lista1 = ['banana', 'maçã', 'kiwi']
 lista1.insert(0, 'abacaxi')
 ~~~~
 
-Descobrir qual a posição de um item: usando o método** index()**, é retornada a posição de um item na lista.
+Descobrir qual a posição de um item: usando o método **index()**, é retornada a posição de um item na lista.
 
 Exemplo: 
 ~~~~ python
@@ -142,8 +149,8 @@ lista1 = ['banana', 'maçã', 'kiwi']
 lista1.sort()
 ~~~~
 
-## LIST COMPREHENSION: 
-### Descrição simplificada: 
+## LIST COMPREHENSION
+### Descrição simplificada
 Cria e manipula listas para otimizar o código.
 
 ### Descrição detalhada:
