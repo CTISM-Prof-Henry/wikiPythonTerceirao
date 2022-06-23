@@ -4,12 +4,12 @@ Os dados numéricos utilizados em códigos Python podem ser: int (inteiros) e fl
  
 
 ### Descrição detalhada:
-Por ser capaz de realizar diversas expressões aritméticas o interpretador Python pode ser utilizado como uma calculadora para as necessidades impostas nele. Dessa forma, é possível inserir variáveis numéricas e utilizá-las como bem entender. Esses números podem ser apresentados como: 
+Por ser capaz de realizar diversas expressões aritméticas o interpretador Python pode ser utilizado como uma calculadora. Dessa forma, é possível inserir variáveis numéricas e utilizá-las como bem entender. Esses números podem ser apresentados como: 
 
 
-**int** (inteiro), exemplo: 5.0; -24.0; 37 → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo
+* **int** (inteiro), exemplo: 5.0; -24.0; 37 → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo
 
-**float** 3.5; -45.68; 12.35 → números **com parte decimal**, com a possibilidade de ser negativo ou positivo
+* **float** 3.5; -45.68; 12.35 → números **com parte decimal**, com a possibilidade de ser negativo ou positivo
 
 
 #### 1. Int (inteiro)
@@ -43,11 +43,15 @@ f = 5.1 #float
 i = float(i) # passando i para float
 f = int(f) # passando f para int
 
-print(i, f)
+print('a conversão de i é:', i)
+print('a conversão de f é:', f)
 ~~~~
-~~~python
-saída = 10.0 5
-~~~~
+```
+a conversão de i é: 10.0
+a conversão de f é: 5
+
+Process finished with exit code 0
+```
 * Nota-se que o i ganhou .0 ao final e que f não possuí mais parte decimal.
 
 #### 4. Verificação de tipos
@@ -62,6 +66,14 @@ print('o tipo da variável i é:',type(i))
 print('o tipo da variável f é:',type(f))
 #saída = <class 'float'>
 ~~~~
+```
+o tipo da variável i é: <class 'int'>
+o tipo da variável f é: <class 'float'>
+
+Process finished with exit code 0
+```
+
+
 #### 5. Expressões aritméticas
 As expressões aritméticas possuem operandos (números utilizados) e operadores, e por meio deles, realizam operações matemáticas para resolver problemas. 
 
@@ -80,14 +92,16 @@ As expressões aritméticas possuem operandos (números utilizados) e operadores
 * Os operadores + e - servem tanto para soma e diferença quanto para demonstrar se o número é positivo ou negativo.
 ~~~python
 a = -4 + 10
-print(a)
-#saída = 6
+print('a será:', a)
 
-b = -4 + (-10)
+print('b será:', b)
 print(b)
-#saída = -14
 ~~~~
-
+```
+a será: 6
+b será: -14
+Process finished with exit code 0
+```
 ##### Exemplos:
 dps eu coloco
 
