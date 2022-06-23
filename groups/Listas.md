@@ -165,4 +165,25 @@ Exemplo com list comprehension:
 ~~~~ python
 lista = [3*x+2 for x in range(10)]
 ~~~~
+## EXERCÍCIOS
+### Exercício 1
+
+Considere a seguinte lista:
+
+disciplinas = ['história', 'geografia', 'português', 'matemática', 'biologia', 'física', 'química', 'literatura', 'filosofia']
+
+Faça um programa que: 
+- Substitua ‘português’ por ‘sociologia’;
+- Remova o último item da lista;
+- Retorne apenas uma lista com ‘sociologia’, ‘biologia’ e ‘química’.
+
+**Resolução**
+
+~~~~python
+disciplinas = ['história', 'geografia', 'português', 'matemática', 'biologia', 'física', 'química', 'literatura', 'filosofia']
+
+disciplinas[2] = 'sociologia'
+disciplinas.pop()
+print(disciplinas[2::2])
+~~~~
 
