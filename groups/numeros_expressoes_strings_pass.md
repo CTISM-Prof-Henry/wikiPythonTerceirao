@@ -1,16 +1,16 @@
 # **Números e expressões aritméticas**
 ### Descrição simplificada:
-Os dados numéricos utilizados em códigos Python podem ser: int (inteiros) e float (ponto flutuante). Esses números junto de operadores aritméticos, são capazes de realizar operações matemáticas.
+Os dados numéricos utilizados em códigos Python podem ser: int (inteiro) e float (ponto flutuante). Esses números junto de operadores aritméticos, são capazes de realizar operações matemáticas.
  
 
 ### Descrição detalhada:
 Por ser capaz de realizar diversas expressões aritméticas o interpretador Python pode ser utilizado como uma calculadora. Dessa forma, é possível inserir variáveis numéricas e utilizá-las como bem entender. Esses números podem ser apresentados como: 
 
 
-* **int** (inteiro), exemplo: 5.0; -24.0; 37 → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo
-
-* **float** 3.5; -45.68; 12.35 → números **com parte decimal**, com a possibilidade de ser negativo ou positivo
-
+* **int** → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo
+  * exemplos: 5.0; -24.0; 37
+* **float** → números **com parte decimal**, com a possibilidade de ser negativo ou positivo
+  * exemplos: 3.5; -45.68; 12.35
 
 #### 1. Int (inteiro)
 ~~~python
@@ -20,10 +20,9 @@ ano_nascimento = int(input('digite o ano em que nasceu:')) #pede o ano de nascim
 print('Você tem',idade, 'anos e nasceu em', ano_nascimento)
 ~~~
 * Caso for inserido um número float no lugar de um int, aparecerá a confirmação de erro:
-
-~~~python
-ValueError: invalid literal for int() with base 10: '(número errado adicionado)'
-~~~~
+  ~~~python
+  ValueError: invalid literal for int() with base 10: '(número errado adicionado)'
+  ~~~~
 
 #### 2. Float (ponto flutuante)
 ~~~python
@@ -36,72 +35,69 @@ print("A circuferência do círculo é:", circunferencia)
 
 #### 3. Conversão de tipos
 * Usando os comandos **float()** e **int()** é possível converter o tipo da variável numérica:
-~~~python
-i = 10 #int
-f = 5.1 #float
+  ~~~python
+  i = 10 #int
+  f = 5.1 #float
 
-i = float(i) # passando i para float
-f = int(f) # passando f para int
+  i = float(i) # passando i para float
+  f = int(f) # passando f para int
 
-print('a conversão de i é:', i)
-print('a conversão de f é:', f)
-~~~~
-```
-a conversão de i é: 10.0
-a conversão de f é: 5
+  print('a conversão de i é:', i)
+  print('a conversão de f é:', f)
+  ~~~~
+  ```
+  a conversão de i é: 10.0
+  a conversão de f é: 5
 
-Process finished with exit code 0
-```
+  Process finished with exit code 0
+  ```
 * Nota-se que o i ganhou .0 ao final e que f não possuí mais parte decimal.
 
 #### 4. Verificação de tipos
 * Usando o comando **type()** é possível verificar qual o tipo da variável.
-~~~python
-i = 10 #int
-f = 5.1 #float
-
-print('o tipo da variável i é:',type(i))
-#saída = <class 'int'>
-
-print('o tipo da variável f é:',type(f))
-#saída = <class 'float'>
-~~~~
-```
-o tipo da variável i é: <class 'int'>
-o tipo da variável f é: <class 'float'>
-
-Process finished with exit code 0
-```
+  ~~~python
+  i = 10 #int
+  f = 5.1 #float
+  
+  print('o tipo da variável i é:',type(i))
+  print('o tipo da variável f é:',type(f))
+  ~~~~
+  ```
+  o tipo da variável i é: <class 'int'>
+  o tipo da variável f é: <class 'float'>
+  
+  Process finished with exit code 0
+  ```
 
 
 #### 5. Expressões aritméticas
-As expressões aritméticas possuem operandos (números utilizados) e operadores, e por meio deles, realizam operações matemáticas para resolver problemas. 
+As expressões aritméticas possuem operandos (números utilizados) e operadores, e com eles realizam operações matemáticas para resolver problemas. 
 
-##### Operadores aritméticos:
+**Operadores aritméticos:**
 
-|  Operadores  | Função            | Exemplo         |
-|:------------:|:------------------|:----------------|
-|      +       | Soma              | 30 + 45 = 75    |
-|      -       | Diferença         | 120 - 15 = 105  |
-|      *       | Multiplicação     | 43 * 5 = 215    |
-|      **      | Exponenciação     | 43 ** 2 = 1849  |
-|      /       | Divisão           | 42 / 5 = 8.6    |
-|      //      | Divisão inteira   | 42 // 5 = 8     |
-|      %       | Resto de divisão  | 42 % 5 = 8      |
+|  Operadores  | Função           | Exemplo         |
+|:------------:|:-----------------|:----------------|
+|      +       | Soma             | 30 + 45 = 75    |
+|      -       | Diferença        | 120 - 15 = 105  |
+|      *       | Multiplicação    | 43 * 5 = 215    |
+|      **      | Potenciação      | 43 ** 2 = 1849  |
+|      /       | Divisão          | 42 / 5 = 8.6    |
+|      //      | Divisão inteira  | 42 // 5 = 8     |
+|      %       | Resto de divisão | 42 % 5 = 8      |
 
-* Os operadores + e - servem tanto para soma e diferença quanto para demonstrar se o número é positivo ou negativo.
-~~~python
-a = -4 + 10
-print('a será:', a)
-
-print('b será:', b)
-print(b)
-~~~~
-```
-a será: 6
-b será: -14
-Process finished with exit code 0
-```
+* Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar se o número é positivo ou negativo.
+  ~~~python
+  a = -4 + 10
+  print('a será:', a)
+  
+  print('b será:', b)
+  print(b)
+  ~~~~
+  ```
+  a será: 6
+  b será: -14
+  Process finished with exit code 0
+  ```
 ##### Exemplos:
 dps eu coloco
 
