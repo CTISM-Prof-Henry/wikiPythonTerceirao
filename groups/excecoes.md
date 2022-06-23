@@ -52,7 +52,11 @@ Depois eu faço.
 
 ### Exercícios
 
-Depois eu faço.
+1. Crie um algoritmo para um banco, o mesmo só deve aceitar saques de números inteiros, mostre uma exceção para caso seja inserido um número decimal.
+
+2. Como tentativa para tentar diminuir a inflação, foram cortadas de circulação as notas de R$2,00, R$20,00 e R$100,00. Crie um algoritmo para um banco, o mesmo só deve aceitar saques de npumeros inteiros, mostre uma exceção para caso seja inserido um número decimal. Mostre outra exceção para caso o usuário não insira um valor que se encaixe dentro das notas disponíveis (RS5,00, R$10,00 e R$50,00)
+
+3. Crie um algoritmo para uma loja de tintas, o mesmo deve conter um dicionário, que tenha como chaves as seguintes cores: azul, amarelo, verde e vermelho e como valores os respectivos tons para cada cor: 6 tons, 3 tons, 4 tons e 3 tons. Mostre uma exceção para caso o usuário solicite uma cor que não esteja dentre as disponíveis e outra para caso seja pedido um tom diferente dos possíveis na cor em específico.
 
 ### Resolução
 
