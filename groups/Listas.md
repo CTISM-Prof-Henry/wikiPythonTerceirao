@@ -165,6 +165,58 @@ Exemplo com list comprehension:
 ~~~~ python
 lista = [3*x+2 for x in range(10)]
 ~~~~
+
+##OPERADORES AND, OR, IN, NOT IN PARA LISTAS
+### Descrição simplificada
+São operadores para verificar se um determinado objeto está contido ou não em uma lista. 
+
+##Descrição Detalhada
+
+**IN** - Usado para verificar se há um determinado valor contido na lista, consequentemente aparecerá true ou false.
+
+~~~~ python
+lista1 = [‘maçã’, ‘abacaxi’, ‘kiwi’]
+
+print [‘abacaxi’ in lista]
+#True
+print[‘Morango’ in lista]
+#False
+~~~~
+
+**NOT IN** -  Usado para verificar se um determinado valor não está contido na lista. Serve ao contrário do IN.
+
+
+~~~~ python
+lista1 = [‘maçã’, ‘abacaxi’, ‘kiwi’]
+
+print[‘morango’ not in lista1]
+#True
+print[‘maçã’ not in lista1]
+#False
+~~~~
+
+**AND** -  Operador que irá unir uma ou mais sentenças para que possa operar. Ambas as sentenças precisam ser verdadeiras para retornar True.
+
+~~~~ pyton
+lista1 = [‘ maçã’, ‘abacaxi’, ‘kiwi’]
+
+print['abacaxi' in lista1 and 'morango' not in lista1]
+#True
+print['maçã' in lista1 and 'kiwi’ not in lista1]
+#False
+~~~~
+
+**OR** - Apenas uma das sentenças precisa de ser verdadeira para que o valor retorne como verdadeiro, e só retornará falso caso ambas sentenças sejam falsas.
+
+~~~~ pyton 
+lista1 = [‘maçã’, ‘abacaxi’, ‘kiwi’]
+
+print [‘morango’ in lista1 or ‘kiwi’ in lista1]
+#True
+print [‘pêra’ in lista1 or ‘uva’ in lista1]
+#False
+
+
 ## EXERCÍCIOS
 ### Exercício 1
 
