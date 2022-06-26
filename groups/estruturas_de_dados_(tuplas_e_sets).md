@@ -176,3 +176,64 @@ print('Gianna' not in tuplaDoGrupo or 'Luize' not in tuplaDoGrupo)
 True
 False
 ```
+## Exercicios
+
+* 1: Crie um programa que mostre quantas vezes o primeiro número da tupla se repete.
+- `entrada`
+```
+tupla = 5,6,3,6,5,7,9
+print(tupla)
+conta = tupla.count(tupla[0])
+print('O primeiro numero se repete:',conta)
+```
+- `saída`
+```
+(5, 6, 3, 6, 5, 7, 9)
+O primeiro numero se repete: 2
+```
+* 2: Escreva um programa que mostre dois conjuntos e depois mostre a intersecção deles. 
+
+- `entrada`
+```
+conjA = set(["amarelo", "azul","vermelho"])
+conjB = set(["verde", "amarelo", "roxo"])
+print("Conjuntos:")
+print(conjA)
+print(conjB)
+print("\nIntersecção dos conjuntos:")
+conjC = conjA & conjB
+print(conjC)
+```
+- `saída`
+``` 
+Conjuntos:
+{'azul', 'amarelo', 'vermelho'}
+{'amarelo', 'roxo', 'verde'}
+
+Intersecção dos conjuntos:
+{'amarelo'}
+```
+* 3: Crie um programa que encontre as diferenças entre as listas. 
+
+- `entrada`
+```
+def conjuntos(A , B):   
+    conjunto_B = set({})
+    for x in A:
+        if x not in B:
+            conjunto_B.add(x)           
+    return conjunto_B
+A = {'8', '4', '1', '6', '7', '2', '4', '9'} 
+B = { '2', '3', '9','6','4', '1', '6'}
+print('Conjunto A:', A)
+print('Conjunto B:', B)
+print("Diferença: " , conjuntos(A , B))
+```
+
+
+- `saída`
+``` 
+Conjunto A: {'2', '1', '9', '7', '8', '4', '6'}
+Conjunto B: {'2', '3', '1', '9', '4', '6'}
+Diferença:  {'7', '8'}
+```
