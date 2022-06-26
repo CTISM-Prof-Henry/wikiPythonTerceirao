@@ -7,9 +7,9 @@ Os dados numéricos utilizados em códigos Python podem ser: int (inteiro) e flo
 Por ser capaz de realizar diversas expressões aritméticas o interpretador Python pode ser utilizado como uma calculadora. Dessa forma, é possível inserir variáveis numéricas e utilizá-las como bem entender. Esses números podem ser apresentados como: 
 
 
-* **int** → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo
+* **int** → números **sem parte decimal ou fracionada**, com a possibilidade de ser negativo ou positivo.
   * exemplos: 5.0; -24.0; 37
-* **float** → números **com parte decimal**, com a possibilidade de ser negativo ou positivo
+* **float** → números **com parte decimal**, com a possibilidade de ser negativo ou positivo.
   * exemplos: 3.5; -45.68; 12.35
 
 #### 1. Int (inteiro)
@@ -75,31 +75,53 @@ As expressões aritméticas possuem operandos (números utilizados) e operadores
 
 **Operadores aritméticos:**
 
-|  Operadores  | Função           | Exemplo         |
-|:------------:|:-----------------|:----------------|
-|      +       | Soma             | 30 + 45 = 75    |
-|      -       | Diferença        | 120 - 15 = 105  |
-|      *       | Multiplicação    | 43 * 5 = 215    |
-|      **      | Potenciação      | 43 ** 2 = 1849  |
-|      /       | Divisão          | 42 / 5 = 8.6    |
-|      //      | Divisão inteira  | 42 // 5 = 8     |
-|      %       | Resto de divisão | 42 % 5 = 8      |
+|  Operadores  | Função           | Exemplo        |
+|:------------:|:-----------------|:---------------|
+|      +       | Soma             | 30 + 45 = 75   |
+|      -       | Diferença        | 120 - 15 = 105 |
+|      *       | Multiplicação    | 43 * 5 = 215   |
+|      **      | Potenciação      | 43 ** 2 = 1849 |
+|      /       | Divisão          | 42 / 5 = 8.6   |
+|      //      | Divisão inteira  | 42 // 5 = 8    |
+|      %       | Resto de divisão | 42 % 5 = 3     |
 
 * Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar se o número é positivo ou negativo.
   ~~~python
   a = -4 + 10
   print('a será:', a)
   
+  b = -4 + (-10)
   print('b será:', b)
-  print(b)
   ~~~~
   ```
   a será: 6
   b será: -14
   Process finished with exit code 0
   ```
-##### Exemplos:
-dps eu coloco
+##### Exemplos simples de uso:
+1. Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor
+    ~~~python
+    num = int(input('digite um número:'))
+    print('analisando o número', num, 'o número sucessor é', (num+1), 'e o antecessor é', (num-1))
+    ~~~~
+    ```
+    digite um número:10
+    analisando o número 10 o número sucessor é 11 e o antecessor é 9
+    
+    Process finished with exit code 0
+     ```
+2. Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada
+    ~~~python
+    num = int(input('digite um número:'))
+    print('o dobro do número é:', (num * 2), 'o triplo é:', (num * 3), 'e a raiz quadrada é:', (num ** 0.5))
+    ~~~~~
+    ```
+    digite um número:25
+    o dobro do número é: 50 o triplo é: 75 e a raiz quadrada é: 5.0
+    
+    Process finished with exit code 0
+    ```
+
 
 # **Comando Pass**
 ### Descrição simplificada:
@@ -117,15 +139,15 @@ Como este comando não resulta em nenhuma operação ou alteração, ele é usad
 Abaixo, temos um trecho de código incompleto:
 
 - `entrada`
-~~~~~python
-1   print('Vou contar até 4, olha só: ')
-2   lista = [1, 2, 4]
-3   for i in lista:
-4       if i == 4:
-5           ##print('3')
-6       print(i)
-7   print('Viu?')
-~~~~~
+  ~~~~~python
+  1   print('Vou contar até 4, olha só: ')
+  2   lista = [1, 2, 4]
+  3   for i in lista:
+  4       if i == 4:
+  5           ##print('3')
+  6       print(i)
+  7   print('Viu?')
+  ~~~~~
 Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes incompletas, como a do exemplo acima, pode resultar em vários erros, dependendo do caso. 
 - `saída`
         
@@ -139,15 +161,15 @@ Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes 
 Por isso, utilizar o comando pass neste trecho seria o indicado, para que o as outras partes do código rodem, e a parte incompleta seja "passada".
 
 - `entrada`
-~~~~~python
-1   print('Vou contar até 4, olha só: ')
-2   lista = [1, 2, 4]
-3   for i in lista:
-4       if i == 4:
-5       pass
-6       print(i)
-7   print('Viu?')
-~~~~~
+  ~~~~~python
+  1   print('Vou contar até 4, olha só: ')
+  2   lista = [1, 2, 4]
+  3   for i in lista:
+  4       if i == 4:
+  5       pass
+  6       print(i)
+  7   print('Viu?')
+  ~~~~~
 - `saída`
 
         "C:\Users\exemplo.py"
@@ -157,7 +179,7 @@ Por isso, utilizar o comando pass neste trecho seria o indicado, para que o as o
         4
         Viu?
 
-Desta forma, ainda que falte o "print('3')" na linha 5, que faria com que a saída fosse 
+Desta forma, ainda que falte o "print('3')" na linha 5, que faria com que a saída fosse: 
     
     Vou contar até 4, olha só:
     1
@@ -166,7 +188,7 @@ Desta forma, ainda que falte o "print('3')" na linha 5, que faria com que a saí
     4
     Viu?
     
-ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trecho ainda não implementado.
+Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trecho ainda não implementado.
 
 
 
