@@ -121,13 +121,11 @@ Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar 
     
     Process finished with exit code 0
     ```
-
+# **Formatação de Strigs**
 
 # **Comando Pass**
 ### Descrição simplificada:
 O comando pass é um comando nulo. Basicamente, ele não realiza nenhuma operação.
-
-
 
 ### Descrição detalhada:
 
@@ -192,6 +190,9 @@ Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trech
 
 
 
-
+#Exercícios:
+1. (sobre números)
+2. (sobre strings)
+3. (sobre pass)
 
 
