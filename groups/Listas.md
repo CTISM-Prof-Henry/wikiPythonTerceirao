@@ -166,11 +166,11 @@ Exemplo com list comprehension:
 lista = [3*x+2 for x in range(10)]
 ~~~~
 
-##OPERADORES AND, OR, IN, NOT IN PARA LISTAS
+## OPERADORES AND, OR, IN, NOT IN PARA LISTAS
 ### Descrição simplificada
 São operadores para verificar se um determinado objeto está contido ou não em uma lista. 
 
-##Descrição Detalhada
+## Descrição Detalhada
 
 **IN** - Usado para verificar se há um determinado valor contido na lista, consequentemente aparecerá true ou false.
 
@@ -215,7 +215,7 @@ print [‘morango’ in lista1 or ‘kiwi’ in lista1]
 #True
 print [‘pêra’ in lista1 or ‘uva’ in lista1]
 #False
-
+~~~~
 
 ## EXERCÍCIOS
 ### Exercício 1
