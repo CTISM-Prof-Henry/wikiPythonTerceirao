@@ -85,7 +85,7 @@ As expressões aritméticas possuem operandos (números utilizados) e operadores
 |      //      | Divisão inteira  | 42 // 5 = 8    |
 |      %       | Resto de divisão | 42 % 5 = 3     |
 
-* Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar se o número é positivo ou negativo.
+Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar se o número é positivo ou negativo.
   ~~~python
   a = -4 + 10
   print('a será:', a)
@@ -98,7 +98,7 @@ As expressões aritméticas possuem operandos (números utilizados) e operadores
   b será: -14
   Process finished with exit code 0
   ```
-##### Exemplos simples de uso:
+#### Exemplos simples de uso:
 1. Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor
     ~~~python
     num = int(input('digite um número:'))
