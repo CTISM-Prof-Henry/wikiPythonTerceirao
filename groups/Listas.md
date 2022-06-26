@@ -277,7 +277,7 @@ notasaluno = []
 	print ('Aluno: ' + str(i + 1))
 	for m in range(6):
 		notasaluno.append(float(input('Nota: ' + str(m+1) + '\n')))
-	media += notasaluno[j]
+	media += notasaluno[m]
 	print (media)
  	media = media/6
  	listnotas.append(media)
