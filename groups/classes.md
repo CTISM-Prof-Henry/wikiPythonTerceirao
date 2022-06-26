@@ -82,4 +82,15 @@ print(pessoa1.origem) # Váriavel "origem" da classe "brasileiro"e
 
 ## Exercícios
 
+1. Crie uma classe qualquer com pelo menos um método, instancie essa classe e imprima o retorno desse método através da instância.
+
 ## Resolução
+
+1.
+~~~python
+def Classe:
+    def retorna_oi(self):
+        return "oi"
+x = Classe()
+print(x.retorna_oi)
+~~~
