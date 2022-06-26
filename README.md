@@ -44,7 +44,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 3. [Exceções](groups/excecoes.md)
 4. [Classes](groups/classes.md)
 5. [Listas](groups/Listas.md)
-6. [Laços de Repetição](Lacos_de_repeticao.md)
+6. [Laços de Repetição](groups/Lacos_de_repeticao.md)
 
 ### Introdução
 
