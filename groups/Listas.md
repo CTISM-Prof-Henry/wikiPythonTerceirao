@@ -166,11 +166,11 @@ Exemplo com list comprehension:
 lista = [3*x+2 for x in range(10)]
 ~~~~
 
-##OPERADORES AND, OR, IN, NOT IN PARA LISTAS
+## OPERADORES AND, OR, IN, NOT IN PARA LISTAS
 ### Descrição simplificada
 São operadores para verificar se um determinado objeto está contido ou não em uma lista. 
 
-##Descrição Detalhada
+## Descrição Detalhada
 
 **IN** - Usado para verificar se há um determinado valor contido na lista, consequentemente aparecerá true ou false.
 
@@ -261,5 +261,27 @@ for i in range(0, len(lutadoras)):
 
 print('A quantidade de lutadoras que não poderão participar da competição pois estão acima do peso é:', quantidadeLutadoras)
 ~~~~
+
+## Exercício 3 
+Em uma sala há 15 alunos, desses 15 alunos  é preciso saber apenas as 5 notas desses alunos. Calcule a média, mostrando o número de alunos com a média superior ou a mesma que 6
+
+**RESOLUÇÃO**
+
+~~~~python
+listnotas = []
+notasaluno = []
+ print ('mostre as notas dos alunos')
+ for i in range(15):
+ 	media = 0
+	notasaluno = []
+	print ('Aluno: ' + str(i + 1))
+	for m in range(6):
+		notasaluno.append(float(input('Nota: ' + str(m+1) + '\n')))
+	media += notasaluno[j]
+	print (media)
+ 	media = media/6
+ 	listnotas.append(media)
+~~~~
+
 
 
