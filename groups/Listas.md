@@ -215,7 +215,7 @@ print [‘morango’ in lista1 or ‘kiwi’ in lista1]
 #True
 print [‘pêra’ in lista1 or ‘uva’ in lista1]
 #False
-
+~~~~
 
 ## EXERCÍCIOS
 ### Exercício 1
