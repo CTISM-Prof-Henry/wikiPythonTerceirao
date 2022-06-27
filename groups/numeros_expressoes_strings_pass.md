@@ -247,8 +247,20 @@ Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trech
 
 
 # Exercícios:
-#### 1. (luisa)
+#### 1. Observe a imagem que representa a equação:
+![equacao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/equacaohoraria.png)
 
+Ao passar exercícios de revisão do 1º ano, o professor de física do CTISM solicitou que os 
+alunos criassem um código que calculasse a Função horária da posição no Movimento Retilíeno Uniforme, para descobrir a posição final
+de um ônibus do transporte coletivo de Santa Maria. Considerando:
+* a posição inicial (So) é nula no instante t;
+* a velocidade (v) de deslocamento deve ser pedida ao usuário em quilômetros por hora;
+* o tempo (t) de viagem deve ser pedida ao usurário em horas.
+
+**Calcule qual a posição final do ônibus no instante de tempo t e imprima na tela:**
+* o valor e o tipo da variável da posição final
+* o valor da velocidade;
+* a quantidade de tempo.
 
  
 #### 2. Observe abaixo um exemplo de uma conta de divisão simples
@@ -263,7 +275,17 @@ Utilizando formatação de strings, imprima na tela uma string mostrando:
 3. (camille)
 
 # Resoluções: 
-1. 
+1.
+~~~python
+So = 0
+v = float(input('Digite o valor da velocidade em km/h:'))
+t = float(input('Digite a quantidade de horas da viagem:'))
+
+S = So + (v * t)
+
+print('A posição final é de:', S, 'km e o tipo de variável é:', type(S))
+print('A velocidade era:', v, 'km/h', 'e as horas da viagem foram:', t)
+~~~~
 
 2. 
 ~~~~~python

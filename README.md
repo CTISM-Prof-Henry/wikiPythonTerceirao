@@ -39,7 +39,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
 ### Sumário
 
-1. [Introdução](#introdução)
+1. [Números, expressões aritméticas, formatação de strings, comando pass](groups/numeros_expressoes_strings_pass.md)
 2. [Fluxo](groups/fluxo.md)
 3. [Exceções](groups/excecoes.md)
 4. [Classes](groups/classes.md)
