@@ -1,5 +1,7 @@
 # Laços de Repetição 
 
+1. [Funções com Range](#Funções-com-range)
+
 ## Explicação Simplificada:
 
 - While e For são estrturas de repetição, que servem para fazer com que uma certa parte do algoritimo se repita nela mesma
