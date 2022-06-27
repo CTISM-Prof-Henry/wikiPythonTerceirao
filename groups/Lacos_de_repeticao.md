@@ -1,6 +1,11 @@
 # Laços de Repetição 
 
-1. [Funções com Range](#Funções-com-range)
+1. [While](#Funções-Range)
+1. [For](#Funções-Range)
+1. [Função Range](#Função-Range)
+1. [Break](#Break)
+1. [Continue](#Continue)
+1. [Exercícios](#Exercícios)
 
 ## Explicação Simplificada:
 
@@ -26,7 +31,7 @@
 ### Função Range:
 
 #### Explicação:
-A função range tem como objetivo retornar um iterador, que também podemos explicar comparando range com if, pois ambas são funções que têm suas ordens a serem executadas.
+A função range tem como objetivo retornar um iterador, que também podemos explicar a comparar range com if, pois ambas são funções que têm as suas ordens a serem executadas.
 
 ```python
 
