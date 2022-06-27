@@ -1,5 +1,17 @@
 # RESUMO SIMPLIFICADO
 
+### Definindo Funções:
+
+* Palavra reservada: *def*.
+* Estrutura:
+	* Declaração de um nome;
+	* Assinatura: parâmetro e retorno;
+	*Por fim, o corpo.
+
+
+### Argumentos com valor padrão:
+* Argumento que tem seu Valor *padrão*, não se altera.
+
 
 ### Argumentos Nomeados
 
@@ -23,6 +35,69 @@
 
 ~~~~
 
+## DEFININDO FUNÇÕES:
+
+As funções são importantes para especificar uma tarefa no código e assim, podemos utilizar uma informação mais de uma vez, enquanto ocorre uma aplicação, sem a necessidade de repetir todas as instruções novamente. 
+
+Usamos a sigla def para definir uma função. Em seguida, nomeamos a mesma e adicionamos os parâmetros. A função possui uma forma que sempre deve ser seguida. 
+No exemplo, o X é o parâmetro:
+
+```python	
+def funçao (X): 
+```
+
+São 3 partes principais que a constituem:
+
+* Nome: É a nomeação. Assim, descrevemos o objetivo da função.
+
+* Assinatura: Está subdividida em:
+
+             Parâmetro: É a entrada, ou seja, o que a função está recebendo. 
+             Retorno: É a saída, ou seja, o que a função está retornando. 
+             
+* Corpo: É o processamento, isto é, o que a função está fazendo, as linhas entre sua definição e a saída. 
+
+
+Exemplo:
+A função possui um corpo, uma forma que sempre deve ser seguida. 
+````python
+def multiplicacao(a, b):
+    return a * b
+
+print(multiplicacao(2, 2)) 
+```
+
+
+O *nome* da função é "multiplicacao";
+
+O *parâmetro* é "a" e "b";
+
+O *retorno* é o resultado de a * b;
+
+O *corpo* é *return a * b*.
+
+
+### ARGUMENTOS COM VALOR PADRÃO:
+
+*Argumentos* são os valores que são passados para uma função. E *padrão* é algo que não se altera..
+ Então os *argumentos com valor *padrão*possuem valores constantes. 
+ ```python
+n1 = 10 #valor padrão para n1.
+n2 = 6 #valor padrão para n2.
+
+def soma(a, b):
+	return a + b
+	"""a e b vão receber n1=10 e n2=6.
+    
+	*a* e *b* possuem argumentos padrão n1 e n2, então o valor deles não se altera. 
+
+	"""
+
+resultado = soma(n1,n2) #n1 e n2 são argumentos que estou passando para a função soma.
+print("O resultado de n1 + n2 é %d" % resultado) #imprime o resultado de n1 + 2.
+```
+
+### IMPORTANTE: Valores padrões são avaliados uma vez. Quando o valor é algo mutável, como uma lista, pode-se fazer diferença
 
 
 ### ARGUMENTOS NOMEADOS:
