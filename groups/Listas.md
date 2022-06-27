@@ -265,10 +265,10 @@ print('A quantidade de lutadoras que não poderão participar da competição po
 ### Exercício 3 
 Faça quatro listas com as seguintes informações:
 
-Continente europeu: Inglaterra, Alemanha, Dinamarca, Portugal
-Continente asiático: Japão, China, Coréia do Sul, Tailândia
-Continente americano: Brasil, Estados Unidos, Chile, Colômbia
-Continente africano: ‘Senegal, África do Sul, Angola, Nigéria
+- Continente europeu: Inglaterra, Alemanha, Dinamarca, Portugal
+- Continente asiático: Japão, China, Coréia do Sul, Tailândia
+- Continente americano: Brasil, Estados Unidos, Chile, Colômbia
+- Continente africano: ‘Senegal, África do Sul, Angola, Nigéria
 
 Utilize seus conhecimentos gerais e faça um programa que retorne True ou False para as seguintes afirmações:
 
