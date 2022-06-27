@@ -18,6 +18,35 @@ except:
 
 Depois eu faço.
 
+
+
+## Sintaxe de Definição de Classes
+
+### Resumo Simplificado:
+Para definirmos uma classe, precisamos estabelecer algum conceito, como no exemplo:
+
+~~~python
+class Atleta:
+
+	def __init__(proprio, nome='Jean Pyerre'):
+	  proprio.nome = nome
+
+~~~
+### Resumo Expandido:
+...
+
+## Objetos de Class
+
+### Resumo Simplificado:
+Duas operações: referências a atributos e instanciação.
+
+*Referências a atributos:* Define o resultado à variável local.
+
+*Instanciação*: Gera um objeto vazio, classe pode determinar um método importante, o ____init____.
+
+### Resumo Expandido:
+...
+
 ## Objetos de Instância
 
 ### Resumo simplificado:
