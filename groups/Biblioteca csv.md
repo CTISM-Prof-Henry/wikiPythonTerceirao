@@ -11,7 +11,7 @@
 
 ### Ex: Formato Texto
 
-<center>![myImage](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/)</center>
+<center>[myImage](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/)</center>
 
 # Importante
 
