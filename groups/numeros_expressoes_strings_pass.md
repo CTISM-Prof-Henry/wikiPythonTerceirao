@@ -246,9 +246,34 @@ Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trech
 
 
 
-#Exercícios:
-1. (sobre números)
-2. (sobre strings)
-3. (sobre pass)
+# Exercícios:
+1. (luisa)
+2.
+#### Observe abaixo um exemplo de uma conta de divisão simples
+![divisao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/contadivisao.png)
+##### Escreva um código que:
+ Peça para o usuário um valor tipo int qualquer para A e B
+Utilizando formatação de strings, imprima na tela uma string mostrando:
+* o valor de x
+* o valor de y, com 3 casas após a vírgula
+* o resultado da divisão inteira de A por B
+
+3. (camille)
+
+# Resoluções: 
+1. 
+
+2 - 
+~~~~~python
+a = int(input('insira o valor de a:'))
+b = int(input('insira o valor de b:'))
+
+x = a%b
+y = a/b
+inteira = a//b
+
+resultado = ('X é igual a %d, y é igual a %1.3f e o resultado da divisão inteira de A por B é %d')
+print(resultado % (x, y, inteira))
+~~~~~~
 
 
