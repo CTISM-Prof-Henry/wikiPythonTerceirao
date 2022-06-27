@@ -127,9 +127,10 @@ A formatação de strings é utilizada para organizar a maneira como os dados se
 
 ### Descrição detalhada:
 Às vezes, ao final de um código em que são usadas strings, desejamos visualizar a saída de dados contendo uma certa organização, buscando suprir o interesse final do algoritmo.
-Com python, há 3 formas de formatar strings:
+Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** formas
 
 #### 1. Metódo format()
+
 
 * `Uso básico do método format():`
 ~~~~python
@@ -137,6 +138,7 @@ Com python, há 3 formas de formatar strings:
 Sou aluno da turma 433
 ~~~~
 As chaves vazias são substituídas pelos objetos referenciados no método format()
+
 
 * `Com argumentos numerados:`
   ~~~python
@@ -160,21 +162,16 @@ As chaves vazias são substituídas pelos objetos referenciados no método forma
   Gestão, Redes e DSPI
   ~~~
 
+
 * `Com o uso de dicionários usando a notação **:`
   ~~~python
   tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
   >>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
   Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
   ~~~
-  Não há a necessidade de quebrar uma string muito longa, pois pode-se fazer referência à posição dos argumentos com o auxilio de dicionários.
 
 
-#### 2. Formatação manual
-  ~~~python
-codigocodigocodigo
-  ~~~
-
-#### 3. Formatação de strings à moda antiga
+#### 2. Formatação de strings à moda antiga
 ~~~python
 >>>notas = "tirei %1.1f na prova de genética e %d na prova de literatura"
 >>>print(notas % (4, 8))
