@@ -201,14 +201,14 @@ Retorna:
 a[:50](50 à 99) na tela.
 - B)Faça outro código que imprime a[50:](0 à 49) na tela
 
-### Resolução2 a):
+### Resolução a):
 ~~~Python
 for i in range(99):
     if i < 50:
         continue
     print(i)
 ~~~~
-### Resolução: 
+### Resolução b): 
 ~~~python
 for i in range(99):
     print(i)
