@@ -46,7 +46,10 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 5. [Listas](groups/Listas.md)
 6. [Laços de Repetição](groups/Lacos_de_repeticao.md)
 7. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
-8. [Biblioteca CSV](groups/Biblioteca%20csv.md)
+8. Leitura e escrita de arquivos
+  	* [Arquivos](groups/Arquivos.md)
+    * [Biblioteca CSV](groups/Biblioteca%20csv.md)
+  
 9. [Definição de Funções](groups/funções1.md)
 
 ### Introdução

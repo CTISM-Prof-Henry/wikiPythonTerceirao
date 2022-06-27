@@ -1,4 +1,53 @@
 
+lencina
+
+# Leitura e escrita de arquivos.
+
+Leitura e escrita de arquivos é a entrada e saída dos dados de um programa, sendo a escrita a entrada e a leitura a saída.   **!**
+
+- **Escrita de dados**
+
+A entrada de dados pode ocorrer de diversas formas. Sendo elas: por teclado via usuário, linha de comando (cmd) ou cliques em botões ou áreas na tela.
+
+- **Leitura de dados**
+
+A leitura de dados 
+
+Podemos ler um arquivo diretamente 
+
+
+# Método With
+
+O método With é usado na leitura de dados e garante a finalização de recursos como fechar corretamente um arquivo após a utilização.
+
+Utilizado com fins 
+ 
+ ```python
+with  open('workfile', encoding="utf-8") as f:
+
+read_data = f.read()
+```
+
+#Podendo verificar se foi realmente fechado
+
+```python
+f.closed
+
+True
+```
+ 
+Caso não utilize o With deve utilizar o método f.close() para efetuar a finalização correta e evitar erros mesmo após o fechamento ser bem sucedido.
+
+EXEMPLO f.close
+
+
+termina parte lencina
+
+inicia pamela
+
+## Exemplo json com método with
+
+All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in
 ## Gravando dados estruturados em JSON
 
 Json (JavaScript Object Notation) é um formato de informações/dados, independentemente da linguagem de programação.
