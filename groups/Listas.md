@@ -262,25 +262,34 @@ for i in range(0, len(lutadoras)):
 print('A quantidade de lutadoras que não poderão participar da competição pois estão acima do peso é:', quantidadeLutadoras)
 ~~~~
 
-## Exercício 3 
-Em uma sala há 15 alunos, desses 15 alunos  é preciso saber apenas as 5 notas desses alunos. Calcule a média, mostrando o número de alunos com a média superior ou a mesma que 6
+### Exercício 3 
+Faça quatro listas com as seguintes informações:
 
-**RESOLUÇÃO**
+Continente europeu: Inglaterra, Alemanha, Dinamarca, Portugal
+Continente asiático: Japão, China, Coréia do Sul, Tailândia
+Continente americano: Brasil, Estados Unidos, Chile, Colômbia
+Continente africano: ‘Senegal, África do Sul, Angola, Nigéria
+
+Utilize seus conhecimentos gerais e faça um programa que retorne True ou False para as seguintes afirmações:
+
+A Tailândia não pertence ao continente asiático
+A Inglaterra e a Alemanha pertencem ao continente europeu;
+O Brasil ou a China pertencem ao continente asiático;
+O Chile e a Argentina pertencem ao continente africano;
+
+
+**Resolução**
 
 ~~~~python
-listnotas = []
-notasaluno = []
- print ('mostre as notas dos alunos')
- for i in range(15):
- 	media = 0
-	notasaluno = []
-	print ('Aluno: ' + str(i + 1))
-	for m in range(6):
-		notasaluno.append(float(input('Nota: ' + str(m+1) + '\n')))
-	media += notasaluno[m]
-	print (media)
- 	media = media/6
- 	listnotas.append(media)
+Europa = ['Inglaterra', 'Alemanha', 'Dinamarca', 'Portugal']
+Asia = ['Japão', 'China', 'Coréia do Sul', 'Tailândia']
+America = ['Brasil', 'Estados Unidos', 'Chile', 'Colômbia']
+Africa = ['Senegal', 'África do Sul', 'Angola', 'Nigéria']
+
+print('A Tailândia não pertence ao continente asiático:', 'Tailândia' not in Asia)
+print('A Inglaterra e a Alemanha pertencem ao continente europeu:', 'Inglaterra' in Europa and 'Alemanha' in Europa)
+print('O Brasil ou a China pertencem ao continente asiático:', 'Brasil' in Asia or 'China' in Asia)
+print('O Chile e a Argentina pertencem ao continente africano:', 'Chile' in Africa and 'Argentina' in Africa)
 ~~~~
 
 
