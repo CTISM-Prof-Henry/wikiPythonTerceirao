@@ -95,14 +95,135 @@ print(menor(6,3))
 ***
 ## **Listas de argumentos arbitrárias**
 
-#### Resumo simplificado
 
-Python é 🔝
+#### Argumentos de funções em Python
+A função pode funcionar sem nenhum argumento, ou seja, apenas com variáveis já definidas, ou aquelas que vão ser criadas dentro do seu escopo. Estes seriam os “argumentos posicionais”, já que os números passados para a função vão ser representados pelas variáveis na posição em que forem declaradas.
 
-#### Resumo expandido
+~~~~python
+def sem_argumentos():
+	return 1
+sem_sergumentos():
+~~~~
+>1
 
-Sério, Python é muito 🔝
+Ou
 
+~~~~python
+def dois_argumentos (i, j):
+	return i + j
+
+dois_argumentos (1, 2):
+~~~~
+>3
+
+#### Argumentos com valor padrão
+Se um argumento quase sempre receber o mesmo valor e ele não puder ser uma variável geral, definimos ele diretamente na declaração da função.
+
+~~~~python
+def argumentos_padrao (i, j=1):
+	return i + j
+
+argumentos_padrao (7)
+~~~~
+>8
+~~~~python
+argumentos_padrao(7, 2)
+~~~~
+>9
+
+Dessa forma o primeiro argumento(posicional) vai ser representado pela variável “i”, o segundo(se houver segundo) vai ser por “j”, mas se for omitido, o valor 1 vai ser atribuído a ele. Assim a função fica mais “clean” e a manutenção acaba sendo mais fácil, pois o valor é registrado em um ponto só do código.
+
+#### Argumentos com palavra chave
+Para passar argumentos com valores até para os posicionais explicitando o nome da variável e até uma ordem diferente da definida originalmente.
+
+~~~~python
+def argumentos_padrao_2(i, j=0, k=0):
+	return i + j + k
+
+argumentos_padrao_2(1, k=2, j=1)
+~~~~
+>4
+~~~~python
+argumentos_padrao_2(k=1, i=2, j=3)
+~~~~
+>6
+
+Você NÃO pode utilizar dos argumentos posicionais com uma palavra chave “(j=0, k=1, 10)” e também não pode repetir um valor definido nos argumentos posicionais “(10, i=10)”.
+
+#### Lista arbitrária de argumentos
+
+Na Lista arbitrária de argumentos, todos os argumentos posicionais de uma função, ou apenas uma parte deles, são empacotados e entregues à função dentro de uma tupla.
+
+~~~~python
+def todos_os_argumentos(*args):
+
+return sum(args)
+
+todos_os_argumentos(1, 2)
+~~~~
+>3
+
+~~~~python
+todos_os_argumentos(1, 2, 3, 4, 5)
+~~~~
+>15
+
+Ou
+
+~~~~python
+def alguns_argumentos(1, *args):
+
+return [i * j for j in args]
+
+alguns_argumentos(10, 1, 2, 3, 4)
+	[10, 20, 30, 40]
+~~~~
+
+Podemos usar os argumentos com valores padrão, porém, eles deverão ser declarados antes do uso do “*args” e utilizados no final da chamada. (Específico da versão 3.X do Python).
+
+~~~~python
+def alguns_argumentos_com_padrao(i, j=1, *args):
+
+return[j + i * k for k in args]
+
+alguns_argumentos_com_padrao(10, 1, 2, 3, 4, j=2)
+	[12, 22, 32, 42]
+~~~~
+
+As funções os.path.join() e printf() são ótimos exemplos de listas arbitrárias. As duas são da biblioteca padrão da linguagem.
+
+#### Lista arbitrária de argumentos com palavra chave
+
+Os argumentos com palavras chaves podem ser dados(todos ou alguns) dentro de um dicionário.
+
+~~~~python
+def argumentos_em_dicionario(**kwargs):
+	for k, v in kwargs.items():
+		print(‘{} = {}’.format(k, v))
+
+argumentos_em_dicionario(nome=’Jorge’, idade=50, ativo=False)
+~~~~
+>nome = Jorge
+>idade = 50
+>ativo = False
+
+#### *args:
+
+Passa uma lista de argumentos variáveis sem palavra-chave em forma de tupla. A função que vai o receber não terá a informação de quantos argumentos serão passados
+
+#### **kargs:
+
+Permite passar um dicionário com inúmeras chaves para a função.
+
+~~~~python
+def alguns_argumentos_com_padrao(i, *args, j=2):
+    return [j + i * k for k in args]
+~~~~
+~~~~python
+def argumentos_em_dicionario(**kargs):
+    for k, v in kargs.items():
+        print('{} = {}'.format(k, v))
+~~~~
 ***
 
 
@@ -110,8 +231,7 @@ Sério, Python é muito 🔝
 
 1. Faça uma função que recebe 3 palavras, cada uma por um parâmetro diferente. Faça com que cada um dos parâmetros seja passado EXCLUSIVAMENTE por posição.
 2. Um professor de algortimos e programação de 2019/2020 precisa passar um trabalho para seus alunos e está sem criatividade, no fim ele pensa em algo inovador. Faça uma calculadora em Python utilizando funções anônimas e com escolha de operações.
-3. Rode um script Python pelo console.
-
+3. Faça um código em listas que mostre na tela quantos animais existem no centro de cuidados fazendo a soma deles separando-os por sexo e depois mostre na tela uma lista com o nome, qual animal é, espécie e sexo de cada um.
 #### **Resolução**
 1.
 ~~~~python
@@ -149,6 +269,31 @@ else:
 ~~~~
 3.
 ~~~~python
+def total(*sexo):
+    soma = 0
+
+    for n in sexo:
+        soma = soma + n
+
+    print('Soma total de animais: ', soma, '\n')
+
+total(3, 7)
+
+def info(**lista):
+
+    for k, v in lista.items():
+        print('{} é {}'.format(k,v))
+
+info(Nome = 'Jorge', Animal = 'Macaco', Especie = 'Primata antropoide', Sexo = 'Masculino\n')
+info(Nome = 'Lilia', Animal = 'Veado', Especie = 'Ozotoceros bezoarticus', Sexo = 'Feminino\n')
+info(Nome = 'Damiani', Animal = 'Urso', Especie = 'Ursidae', Sexo = 'Masculino\n')
+info(Nome = 'Cadu', Animal = 'Galo', Especie = 'Gallus gallus domesticus', Sexo = 'Masculino\n')
+info(Nome = 'Roach', Animal = 'Égua', Especie = 'Equus ferus', Sexo = 'Feminino\n')
+info(Nome = 'Mimi', Animal = 'Leoa', Especie = 'Felidae', Sexo = 'Feminino\n')
+info(Nome = 'Seboso', Animal = 'Coala', Especie = 'Phascolarctidae', Sexo = 'Masculino\n')
+info(Nome = 'Bichano', Animal = 'Leão', Especie = 'Felidae', Sexo = 'Masculino\n')
+info(Nome = 'Banguela', Animal = 'Cavalo', Especie = 'Equus ferus', Sexo = 'Masculino\n')
+info(Nome = 'Miranha', Animal = 'Hipopótamo', Especie = 'Hippopotamidae', Sexo = 'Masculino')
 
 
 ~~~~
