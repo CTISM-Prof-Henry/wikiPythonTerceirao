@@ -20,10 +20,10 @@ Os parâmetros especiais são separados em 3 tipos, sendo eles: parâmetro posic
 #### Resumo expandido
 
 
-###Relembrando Parâmetro: 
+### Relembrando Parâmetro: 
 é uma variável declarada no cabeçalho da função e tem uso exclusivo dentro do bloco de instrução da mesma. A definição dos parâmetros que uma função deve receber obriga o envio dos valores todas as vezes em que a mesma for invocada, do contrário, a função não é invocada.
 
-###Parâmetros especiais: 
+### Parâmetros especiais: 
 Antes de vermos o que são os parâmetros especiais, teremos de saber que os argumentos podem ser passados para uma função Python tanto por posição quanto pelo nome. Para um melhor entendimento do desenvolvedor, faz sentido restringir a maneira pelo qual argumentos possam ser passados, já que assim ele precisará apenas olhar para a definição da função para assim determinar se os itens são passados por posição, por posição e nome, ou por nome.
 Para indicar se um parâmetro é posicional-ou-nomeado, somente-posicional ou somente-nomeado, usamos os símbolos (/ e *). Eles irão indicar o tipo de parâmetro pelo qual os argumentos podem ser passados para as funções. Bom lembrar que em alguns lugares, podemos ver os parâmetros nomeados recebendo o nome de parâmetros da palavra-chave.
 
@@ -31,15 +31,15 @@ Para indicar se um parâmetro é posicional-ou-nomeado, somente-posicional ou so
 
 
 
-###Parâmetros posicional-ou-nomeados:
+### Parâmetros posicional-ou-nomeados:
 Se os símbolos “/” e “*" por algum motivo não estiverem presentes na função, argumentos podem ser passados para uma função por posição ou por nome como antes dito.
 
 
-###Parâmetros somente-posicionais:
+### Parâmetros somente-posicionais:
 De fato é possível definir parâmetros como somente-posicional, e apenas nesse caso, a ordem dos parâmetros importa. 
 	No caso dos parâmetros somente-posicional, eles são colocados anteriormente a /. Ela é usada para identificar onde um argumento somente-posicional se inicia e termina.
 
-###Parâmetros somente-nomeados: 
+### Parâmetros somente-nomeados: 
 Da mesma maneira que é possível ter parâmetros como somente-posicional, também é possível ter parâmetros como somente-nomeado, que indica, obviamente, que o mesmo deve ser passado por um argumento nomeado. Igual os parâmetros somente-posicionais, aqui colocamos um símbolo antes, no caso *, que deve ser colocado antes do primeiro parâmetro somente-nomeado.
 
 
