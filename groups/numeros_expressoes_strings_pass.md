@@ -133,11 +133,11 @@ Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** for
 
 
 * `Uso básico do método format():`
-~~~~python
->>>print('Sou aluno da {} {}'.format('turma', '433'))
-Sou aluno da turma 433
-~~~~
-As chaves vazias são substituídas pelos objetos referenciados no método format()
+  ~~~~python
+  >>>print('Sou aluno da {} {}'.format('turma', '433'))
+  Sou aluno da turma 433
+  ~~~~
+  As chaves vazias são substituídas pelos objetos referenciados no método format()
 
 
 * `Com argumentos numerados:`
@@ -247,9 +247,11 @@ Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trech
 
 
 # Exercícios:
-1. (luisa)
-2.
-#### Observe abaixo um exemplo de uma conta de divisão simples
+#### 1. (luisa)
+
+
+ 
+#### 2. Observe abaixo um exemplo de uma conta de divisão simples
 ![divisao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/contadivisao.png)
 ##### Escreva um código que:
  Peça para o usuário um valor tipo int qualquer para A e B
@@ -263,7 +265,7 @@ Utilizando formatação de strings, imprima na tela uma string mostrando:
 # Resoluções: 
 1. 
 
-2 - 
+2. 
 ~~~~~python
 a = int(input('insira o valor de a:'))
 b = int(input('insira o valor de b:'))
@@ -275,5 +277,6 @@ inteira = a//b
 resultado = ('X é igual a %d, y é igual a %1.3f e o resultado da divisão inteira de A por B é %d')
 print(resultado % (x, y, inteira))
 ~~~~~~
+3. 
 
 
