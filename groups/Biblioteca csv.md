@@ -1,15 +1,15 @@
-# <center>Biblioteca CSV</center>
+<center># Biblioteca CSV</center>
 
 Os arquivos csv sempre estarão em um formato de (tabela), nunca serão em formato de um texto.
 
 ## Ex: Formato Tabela
 
-### <center>Arquivo Raiz</center>
+<center>Arquivo Raiz</center>
 ![csvraiz](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20raiz.png)
-### <center>Arquivo Nutela</center>
+<center>Arquivo Nutela</center>
 ![csvnutela](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20nutela.png)
 
-## Ex: Formato Texto
+<center>Ex: Formato Texto</center>
 
 ![Formatotexto](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Aquivo%20texto.png)
 
