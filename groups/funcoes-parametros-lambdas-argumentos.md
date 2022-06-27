@@ -14,11 +14,35 @@
 
 #### Resumo simplificado
 
->Python é 🔝
+Os parâmetros especiais são separados em 3 tipos, sendo eles: parâmetro posicional-ou-nomeado, somente-posicional e somente-nomeado. Usamos o somente-posicional quando os nomes não são necessariamente importantes, ou quando você quer mostrar a importância da ordem. Da mesma forma que usamos somente-nomeado quando os nomes tem sim relevância na função.  
+
 
 #### Resumo expandido
 
->Sério, Python é muito 🔝
+
+###Relembrando Parâmetro: 
+é uma variável declarada no cabeçalho da função e tem uso exclusivo dentro do bloco de instrução da mesma. A definição dos parâmetros que uma função deve receber obriga o envio dos valores todas as vezes em que a mesma for invocada, do contrário, a função não é invocada.
+
+###Parâmetros especiais: 
+Antes de vermos o que são os parâmetros especiais, teremos de saber que os argumentos podem ser passados para uma função Python tanto por posição quanto pelo nome. Para um melhor entendimento do desenvolvedor, faz sentido restringir a maneira pelo qual argumentos possam ser passados, já que assim ele precisará apenas olhar para a definição da função para assim determinar se os itens são passados por posição, por posição e nome, ou por nome.
+Para indicar se um parâmetro é posicional-ou-nomeado, somente-posicional ou somente-nomeado, usamos os símbolos (/ e *). Eles irão indicar o tipo de parâmetro pelo qual os argumentos podem ser passados para as funções. Bom lembrar que em alguns lugares, podemos ver os parâmetros nomeados recebendo o nome de parâmetros da palavra-chave.
+
+
+
+
+
+###Parâmetros posicional-ou-nomeados:
+Se os símbolos “/” e “*" por algum motivo não estiverem presentes na função, argumentos podem ser passados para uma função por posição ou por nome como antes dito.
+
+
+###Parâmetros somente-posicionais:
+De fato é possível definir parâmetros como somente-posicional, e apenas nesse caso, a ordem dos parâmetros importa. 
+	No caso dos parâmetros somente-posicional, eles são colocados anteriormente a /. Ela é usada para identificar onde um argumento somente-posicional se inicia e termina.
+
+###Parâmetros somente-nomeados: 
+Da mesma maneira que é possível ter parâmetros como somente-posicional, também é possível ter parâmetros como somente-nomeado, que indica, obviamente, que o mesmo deve ser passado por um argumento nomeado. Igual os parâmetros somente-posicionais, aqui colocamos um símbolo antes, no caso *, que deve ser colocado antes do primeiro parâmetro somente-nomeado.
+
+
 
 
 ***
@@ -84,14 +108,18 @@ Sério, Python é muito 🔝
 
 #### **Exercícios**
 
-1. Abra o console do Python.
+1. Faça uma função que recebe 3 palavras, cada uma por um parâmetro diferente. Faça com que cada um dos parâmetros seja passado EXCLUSIVAMENTE por posição.
 2. Um professor de algortimos e programação de 2019/2020 precisa passar um trabalho para seus alunos e está sem criatividade, no fim ele pensa em algo inovador. Faça uma calculadora em Python utilizando funções anônimas e com escolha de operações.
 3. Rode um script Python pelo console.
 
 #### **Resolução**
 1.
 ~~~~python
+def concatena(a, b, c, /):
+	print(a, b, c)
 
+	
+concatena('dragon', 'ball', 'Z')
 
 ~~~~
 2.
