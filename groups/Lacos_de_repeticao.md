@@ -203,9 +203,9 @@ Retorna:
 
 
 ### Exercício 2:
-- A)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
+- a)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
 a[:50] na tela.
-- B)Faça outro código que imprime a[50:] na tela
+- b)Faça outro código que imprime a[50:] na tela
 
 ### Resolução a):
 ~~~Python
