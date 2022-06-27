@@ -15,11 +15,37 @@ truco= {'espada': '7', 'paus':'3'}
 # Iteração 
 Usando o metodo items
 ~~~~~python
-truco= {'espada': '7', 'paus':'3'} 
-for k,v in truco.items(): 
-    print(k,v)
+print('\n\nos pares CHAVE/VALOR são:')
+for chave, valor in dicio1.items():	
+	print(chave, ' = ', valor)			#mostra os pares CHAVE/VALOR
 ~~~~~
+Usando o metodo keys
+~~~~~python
+print('\n\nas chaves são:')
+for chave in dicio2.keys():
+	print(chave)						#mostra as chaves
+~~~~~~
+Usando o metodo values
+~~~~~python
+print('\n\nos valores são:')
+for valor in dicio3.values():								
+	print(valor)						#mostra os valores
+~~~~~~
 # Operadores and, or, in, not in para dicionários 
 not e or not é o operador de maior prioridade e or o de menor e or o de menor. Logo na expressão Truco and not Uno or Pife é semelhante a expressão (Truco and (not Uno)) or Pife.
+
+~~~~~python
+if 'espada' in dicio1.keys():							
+	print('\n\n', dicio1['espada'])						
+
+if 'copas' not in dicio2.keys():
+	print('copas não é chave de dicio2')
+
+if 'espada' and 'ouro' in dicio2.keys():				
+	print('espada e ouro são chaves de dicio2')			
+
+if '1' or '3' in dicio3.values():
+	print('1 ou 3 são valores de dicio3')				
+~~~~~~
 
 in e not in são operadores de menor prioridade em comparação aos operadores numéricos
