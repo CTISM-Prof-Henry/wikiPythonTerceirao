@@ -202,9 +202,10 @@ Abaixo, temos um trecho de código incompleto:
   6       print(i)
   7   print('Viu?')
   ~~~~~
-Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes incompletas, como a do exemplo acima, pode resultar em vários erros, dependendo do caso. 
+  Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes incompletas, como a do exemplo acima, pode resultar em vários erros, dependendo do caso. 
+
 - `saída`
-        
+
         File "C:/Users/exemplo.py", line 6
         print(i)
         ^
@@ -284,7 +285,7 @@ t = float(input('Digite a quantidade de horas da viagem:'))
 S = So + (v * t)
 
 print('A posição final é de:', S, 'km e o tipo de variável é:', type(S))
-print('A velocidade era:', v, 'km/h', 'e as horas da viagem foram:', t)
+print('A velocidade era:', v, 'km/h e as horas da viagem foram:', t)
 ~~~~
 
 2. 
