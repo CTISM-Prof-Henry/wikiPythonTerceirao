@@ -132,39 +132,39 @@ Com python, há 3 formas de formatar strings:
 #### 1. Metódo format()
 
 * Com argumentos numerados:
-~~~python
->>> print('{0} e {1}'.format('dor', 'horror'))
-dor e horror
-~~~~
+  ~~~python
+  >>> print('{0} e {1}'.format('dor', 'horror'))
+  dor e horror
+  ~~~~
 
-* Com argumentos nomeados
-~~~python
->>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
-Nós, da 433, adoramos o sor Henry!
-~~~
+* Com argumentos nomeados:
+  ~~~python
+  >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
+  Nós, da 433, adoramos o sor Henry!
+    ~~~
 
-* Argumentos numerados e nomeados juntos
-~~~python
->>> print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
-Gestão, Redes e DSPI
-~~~
+* Argumentos numerados e nomeados juntos:
+  ~~~python
+  >>> print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
+  Gestão, Redes e DSPI
+  ~~~
 
-* Com o uso de dicionários usando a notação **
-~~~python
-tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
->>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
-Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
-~~~
+* Com o uso de dicionários usando a notação **:
+  ~~~python
+  tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
+  >>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
+  Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
+  ~~~
 
 #### 2. Formatação manual
-~~~python
+  ~~~python
 codigocodigocodigo
-~~~
+  ~~~
 
 #### 3. Formatação de strings à moda antiga
 ~~~python
 codigocodigocodigo
-~~~
+ ~~~
 
 # **Comando Pass**
 ### Descrição simplificada:
