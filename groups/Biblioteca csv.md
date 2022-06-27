@@ -4,9 +4,10 @@
 
 ### Ex: Formato Tabela
 
-<center> #### Arquivo Nutela </center>
+#### <center> Arquivo Nutela</center>
 ![csvraiz](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20raiz.png)
-<center> #### Arquivo Nutela </center>
+
+#### <center> Arquivo Nutela </center>
 ![csvnutela](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20nutela.png)
 
 ### Ex: Formato Texto
