@@ -1,24 +1,22 @@
 # <center>Biblioteca CSV</center>
 
-## Os arquivos csv sempre estarão em um formato de (tabela), nunca serão em formato de um texto.
+Os arquivos csv sempre estarão em um formato de (tabela), nunca serão em formato de um texto.
 
-### Ex: Formato Tabela
+## Ex: Formato Tabela
 
-#### <center>Arquivo Raiz</center>
+### <center>Arquivo Raiz</center>
 ![csvraiz](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20raiz.png)
-#### <center>Arquivo Nutela</center>
+### <center>Arquivo Nutela</center>
 ![csvnutela](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Arquivo%20csv%20nutela.png)
 
-### Ex: Formato Texto
+## Ex: Formato Texto
 
 ![Formatotexto](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Aquivo%20texto.png)
 
-# Importante
 
-## import csv -> Utilizado para importar a biblioteca csv
+# import csv -> Utilizado para importar a biblioteca csv
 
-
-## Criando um arquivo csv:
+# Criando um arquivo csv:
 
 Um arquivo de colunas, as colunas normalmente são separadas por " , ". Geralmente sendo a primeira linha definindo as colunas, que será chamado de cabeçalho.
 
@@ -34,13 +32,13 @@ with open('./teste.csv, 'w') as csvfile:
 podendo criar no excel:
 <center> ![Explicaçãolerumarquivocsv](Link img)</center>
 
-## Lendo um arquivo csv:
+# Lendo um arquivo csv:
 
  * open('Arquivo.csv', newline='') -> Função usada para abrir um arquivo
 
 * csv.reader -> Utilizado para ler um arquivo csv (irá ler todas as linhas do arquivo)
 
-### Esse código irá retornar as linhas do arquivo como estão:
+## Esse código irá retornar as linhas do arquivo como estão:
 
 ```python
 # Importa a biblioteca csv 
@@ -54,7 +52,7 @@ for linha in linhas:
     print(linha)
 ```
 
-### Esse código irá retornar os parâmetros chamados no print:
+## Esse código irá retornar os parâmetros chamados no print:
 
 ~~~~python
 import csv
@@ -67,7 +65,7 @@ for pessoa in pessoas:
     print("Nome:", pessoa["nome"], " - Idade:", pessoa["idade"], " - Email:", pessoa["email"])
 ~~~~
 
-#### Obs: Podemos abrir um arquivo dando um modo, quando usará especificamente para ler ou modificar. 
+### Obs: Podemos abrir um arquivo dando um modo, quando usará especificamente para ler ou modificar. 
 * open('file.csv', mode='r')
 
 Caractere | Significado
