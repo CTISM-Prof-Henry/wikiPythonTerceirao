@@ -2,33 +2,68 @@
 
 ### Resumo simplificado
 
-Exceção ocorre quando algum erro, esperado ou não, ocorre, então ele é tratado. Esta prática é boa para evitar as temidas mensagens de erro genéricas.
-Sua estrutura genérica é:<br>
+Na hora da execução do programa, mesmo com ele estando sintaticamente correto, podem ocorrer erros de vários tipos e por diversos motivos. Esses erros são chamados de Exceções e eles não são necessariamente fatais, podendo ser tratados.<br>
+O tratamento de exceções é muito importante por dois principais motivos: para evitar as temidas mensagens de erro genéricas e para terminar de rodar o programa em certos casos, mesmo após ocorrer um erro.
+
+### Resumo expandido
+Os comandos mais importantes para o tratamento de exceções são: `"Raise"`, `"Try"` e `"Except"`.<br>
+
+Com o comando `"Raise"` é possível forçar uma exceção e deixar uma mensagem de erro personalizada para o usuário, facilitando o entendimento de onde ocorreu o erro e qual foi o tipo do erro.<br>
+
+A estrutura para lançar uma Exceção é:<br>
+
 ~~~python
-try:
-    print("estamos tentando")
-except:
-    print("não deu, estamos tratando")
+raise TipoExceção("Mensagem de Erro")
 ~~~
 
-Exceções podem ser expecificadas (erro de sintaxe, valor, divisão por zero, etc...).<br>
-O else serve para quando não entramos na exceção.<br>
-O finally é excecutado sempre, independente se entramos na exceção ou não.<br>
-Suas estruturas são:<br>
+Já para capturar e tratar exceções, utilizamos os comandos `"Try"` e `"Except"` em conjunto, onde o "Try" tenta fazer algo e caso ocorra alguma exceção, ao invés de o programa fechar, o "Except" trata ela e diz o que fazer.<br>
+
+A estrutura genérica para capturar Exceções é:<br>
 ~~~python
 try:
-    numero1 = int(input("Digite um numero inteiro: "))
-    numero2 = int(input("Digite outro numero inteiro: "))
-    resultado_divisão = numero1/numero2
-except ValueError:
-    print("Valor do numero não é inteiro.")
-except ZeroDivisionError:
-    print("Divisão por zero é terminantemente contra as leis, os matemáticos vão te pegar na saída.")
-else:
-    print("Passou")
-finally:
-	print("Chegamos ao fim, volte mais tarde ou execute novamente o código")
+    print("Estamos tentando...")
+except:
+    print("Ocorreu uma exceção, estamos tratando...")
 ~~~
+
+Há outros comandos bastante usados também como o `Else` e o `Finally`.<br>
+O "Else" é utilizado para quando o código não entra em nenhuma exceção, ele faz algo.<br>
+O "Finally" é utilizado para rodar uma instrução não importa se o código entrou em uma exceção ou não.<br>
+
+O melhor possível seria ter tratamentos personalizados para cada tipo de exceção. Segue um 
+exemplo do uso de exceções utilizado na aula do ano passado:<br>
+
+~~~python
+def eh_melao(fruta: str) -> None:   #Cria uma função que recebe uma String de parâmetro
+
+    if not isintance(fruta, str):   #Se o parâmetro não for String
+        raise TypeError('Essa função só aceita strings!')   #Da uma exceção do tipo TypeError
+    if not fruta == 'melão':    #Se o parâmetro for diferente de 'melão'
+        raise ValueError('Não é melão!')    #Da uma exceção do tipo ValueError
+    else:   #Se passar dos 'IFs' acima
+        print('É melão!')   #É melão!!!
+
+def main():
+
+    try:
+        eh_melao(2) #Tenta chamar a função eh_melao com o parâmetro 2
+    except ValueError as ve:    #Se ocorrer uma Exceção de ValueError
+        print("Ocorreu uma exceção do tipo ValueError") #Acontece isso
+    except TypeError as te:     #Se ocorrer uma Exceção de ValueError
+        print("Ocorreu uma exceção do tipo TypeError")  #Acontece isso
+    except Exception as e:      #Se ocorrer outra Exceção qualquer
+        print("Ocorreu algum erro!")    #Acontece isso
+    finally:    #Independente se ocorre exceção ou não
+        print("Terminei de rodar!") #Roda esse instrução
+
+~~~
+
+A linguagem Python por padrão já possui várias Exceções embutidas na Classe Exception. As principais são: <br>
+- TypeError: essa exceção é lançada quando uma função é recebe a um objeto que é de um tipo não apropriado.
+- ValueError: essa exceção é lançada quando uma função recebe o argumento com o tipo certo, mas o valor não adequado.
+- ZeroDivisionError: essa exceção é lançada quando tenta dividir algum número por zero.
+- NameError: essa exceção é lançada quando um nome não existe. Exemplo uma variável não definida
+
 
 Encadeamento de exceções serve para "criar" uma exceção de algum tipo, é bom para regras de negocio em que o caso não seria um erro mas, por fatores externos, se torna.
 Sua estrutura é:<br>
@@ -45,10 +80,6 @@ except NameError:
 except ValueError:
     print("Erro de valor")
 ~~~
-
-### Resumo expandido
-
-Depois eu faço.
 
 ### Exercícios
 
