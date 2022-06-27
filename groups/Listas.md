@@ -272,10 +272,10 @@ Continente africano: ‘Senegal, África do Sul, Angola, Nigéria
 
 Utilize seus conhecimentos gerais e faça um programa que retorne True ou False para as seguintes afirmações:
 
-A Tailândia não pertence ao continente asiático
-A Inglaterra e a Alemanha pertencem ao continente europeu;
-O Brasil ou a China pertencem ao continente asiático;
-O Chile e a Argentina pertencem ao continente africano;
+- A Tailândia não pertence ao continente asiático;
+- A Inglaterra e a Alemanha pertencem ao continente europeu;
+- O Brasil ou a China pertencem ao continente asiático;
+- O Chile e a Argentina pertencem ao continente africano.
 
 
 **Resolução**
