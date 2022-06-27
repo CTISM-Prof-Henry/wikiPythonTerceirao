@@ -1,29 +1,25 @@
--->Introdução
+# Introdução 
 Dicionários são um conjunto, não-ordenado, de chave:valor. É demilitado por chaves.
 
--->Dicionario
-Também chamado de "memoria associativa" ou vetor associativo em outras linguagens. São indexados por keys, 
-podendo ser de tipo mutavel(strings e inteiros). É um conjunto não-ordenado de chave:valor, é delimitado por chaves, 
-onde seus elementos são separados por virgula.
+# Dicionario 
+Também chamado de "memoria associativa" ou vetor associativo em outras linguagens. São indexados por keys, podendo ser de tipo mutavel(strings e inteiros). É um conjunto não-ordenado de chave:valor, é delimitado por chaves, onde seus elementos são separados por virgula.
 
--->Construção de dicionarios
-através da funcão dict() é possivel produzir dicionarios de forma direta
-ex: dict([('espada', 7), ('paus', 3), ('ouro', 3)])
-ou também 
-dict(espada=7, paus=3)
-ou também 
+# Construção de dicionarios 
+Através da funcão dict() é possivel produzir dicionarios de forma direta 
+ex: 
+~~~~~python
+dict([('espada', 7), ('paus', 3), ('ouro', 3)]) 
+dict(espada=7, paus=3) 
 truco= {'espada': '7', 'paus':'3'}
+~~~~~
+# Iteração 
+Usando o metodo items
+~~~~~python
+truco= {'espada': '7', 'paus':'3'} 
+for k,v in truco.items(): 
+    print(k,v)
+~~~~~
+# Operadores and, or, in, not in para dicionários 
+not e or not é o operador de maior prioridade e or o de menor e or o de menor. Logo na expressão Truco and not Uno or Pife é semelhante a expressão (Truco and (not Uno)) or Pife.
 
--->Iteração
-usando o metodo items
-truco= {'espada': '7', 'paus':'3'}
-for k,v in truco.items():
-	print(k,v)
-
--->Operadores and, or, in, not in para dicionários
---not e or
-not é o operador de maior prioridade e or o de menor e or o de menor.
-Logo na expressão Truco and not Uno or Pife é semelhante a expressão (Truco and (not Uno)) or Pife
-
--- in e not in
-são operadores de menor prioridade em comparação aos operadores numéricos
+in e not in são operadores de menor prioridade em comparação aos operadores numéricos
