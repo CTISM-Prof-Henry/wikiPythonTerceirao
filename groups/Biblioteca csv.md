@@ -105,8 +105,3 @@ with open('arquivo.csv', 'r', newline='') as arquivocsv:
 ~~~~
 
 ## Quantas linhas terá "arquivo.csv" e quantas linhas retornarão?
-
-A) 4, 4
-B) 4, 2
-C) 4, 0
-D) 0, 0
