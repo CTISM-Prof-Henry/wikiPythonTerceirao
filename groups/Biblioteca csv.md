@@ -22,12 +22,15 @@ Um arquivo de colunas, as colunas normalmente são separadas por " , ". Geralmen
 
 ```python
 import csv
+
 # Abrir/criar o arquivo(teste.csv)
-with open('./teste.csv, 'w') as csvfile:
-# Cria a primeira linha, separando as colonas por "," '''
-    csv.writer(csvfile, delimiter=',').writerow(['João', '30' ])
-    csv.writer(csvfile, delimiter=',').writerow(['José', '27'])
-    csv.writer(csvfile, delimiter=',').writerow(['Pedro', '20'])
+with open('./arquivo.csv', 'w') as arquivocsv:
+
+# Criando as linhas, separando as colonas por "," '''
+	csv.writer(arquivocsv, delimiter=',').writerow(['Ricardinho', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Felipe', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Henry', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Guilherme', 'Ruim'])
 ```
 podendo criar no excel:
 <center> ![Explicaçãolerumarquivocsv](Link img)</center>
@@ -50,6 +53,13 @@ linhas = csv.reader(arquivo)
 # for para retornar as linhas
 for linha in linhas:
     print(linha)
+
+# Abrirá "arquivo.csv" com modo de leitura
+with open('./arquivo.csv', 'r') as arquivocsv:
+#for para ler as linhas
+	for linhas in csv.reader(arquivocsv):
+		# printa as linhas
+		print(linhas)
 ```
 
 ## Esse código irá retornar os parâmetros chamados no print:
@@ -79,17 +89,16 @@ Caractere | Significado
 ~~~~ python
 import csv
 
-with open('arquivo.csv', 'w') as csv file:
-    csv.writer(csvfile, delimiter=',').writerow(['Ricardinho, '70' ])
-    csv.writer(csvfile, delimiter=',').writerow(['Felipe, '22'])
-    csv.writer(csvfile, delimiter=',').writerow(['Henry', '10'])
-    csv.writer(csvfile, delimiter=',').writerow(['Guilherme', '50'])
+with open('./arquivo.csv', 'w') as arquivocsv:
+	csv.writer(arquivocsv, delimiter=',').writerow(['Ricardinho', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Felipe', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Henry', 'Bom'])
+	csv.writer(arquivocsv, delimiter=',').writerow(['Guilherme', 'Ruim'])
 
 
-linhas = csv.reader(arquivo.csv)
-
-for linha in linhas:
-	print(linha)
+with open('./arquivo.csv', 'r') as arquivocsv:
+	for linhas in csv.reader(arquivocsv):
+		print(linhas)
 ~~~~
 
 ## Quantas linhas terá "arquivo.csv" e quantas linhas retornarão?
