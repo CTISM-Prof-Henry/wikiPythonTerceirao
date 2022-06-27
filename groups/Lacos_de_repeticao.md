@@ -197,21 +197,21 @@ Retorna:
 
 
 ### Exercício 2:
--
--
--
+- A)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
+a[:50](50 à 99) na tela.
+- B)Faça outro código que imprime a[50:](0 à 49) na tela
 
-### Resolução:
--
--
--
-
-
-### Exercício 3:
--
--
--
-### Resolução: 
--
--
--
+### Resolução a):
+~~~Python
+for i in range(99):
+    if i < 50:
+        continue
+    print(i)
+~~~~
+### Resolução b): 
+~~~python
+for i in range(99):
+    print(i)
+    if i >= 50: 
+        break
+~~~
