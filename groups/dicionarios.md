@@ -67,7 +67,7 @@ if __name__=='__main__':
 	main()
 ~~~~~
 
-1 - #2 - Crie um dicionário utilizando 3 cartas de um baralho espanhol, onde o naipe é o valor, e verifique se o jogador possui uma flor.  
+2 - Crie um dicionário utilizando 3 cartas de um baralho espanhol, onde o naipe é o valor, e verifique se o jogador possui uma flor.  
 2.  
 ~~~~~python
 def main():
