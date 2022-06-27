@@ -50,10 +50,10 @@ if '1' or '3' in dicio3.values():
 
 in e not in são operadores de menor prioridade em comparação aos operadores numéricos
 
-#Exercícios
+# Exercícios
 1 - Construa um dicionário e percorra-o a procura de uma chave de valor 'ele gosta', caso não haja este valor exiba na tela cavalo:
 
-#Resolução
+# Resolução
 1.
 ~~~~~python
 def main():
