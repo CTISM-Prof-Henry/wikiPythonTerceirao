@@ -54,7 +54,7 @@ for linha in linhas:
 
 ## Esse código irá retornar os parâmetros chamados no print:
 
-~~~~python
+```python
 import csv
 
 arquivo = open('pessoas.csv')
@@ -63,7 +63,7 @@ pessoas = csv.DictReader(arquivo)
 
 for pessoa in pessoas:
     print("Nome:", pessoa["nome"], " - Idade:", pessoa["idade"], " - Email:", pessoa["email"])
-~~~~
+```
 
 ### Obs: Podemos abrir um arquivo dando um modo, quando usará especificamente para ler ou modificar. 
 * open('file.csv', mode='r')
@@ -72,3 +72,29 @@ Caractere | Significado
 ----------|----------------------------
 'r'       |  abre para leitura (padrão)
 'w'       | abre para escrita, removendo tudo que está no mesmo
+
+
+# Questão
+
+~~~~ python
+import csv
+
+with open('arquivo.csv', 'w') as csv file:
+    csv.writer(csvfile, delimiter=',').writerow(['Ricardinho, '70' ])
+    csv.writer(csvfile, delimiter=',').writerow(['Felipe, '22'])
+    csv.writer(csvfile, delimiter=',').writerow(['Henry', '10'])
+    csv.writer(csvfile, delimiter=',').writerow(['Guilherme', '50'])
+
+
+linhas = csv.reader(arquivo.csv)
+
+for linhas in linha:
+	print(linha)
+~~~~
+
+## Quantas linhas terão o "arquivo.csv" e quantas linhas retornarão?
+
+A) 4, 4
+B) 4, 2
+C) 4, 0
+D) 0, 0
