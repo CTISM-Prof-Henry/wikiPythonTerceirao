@@ -23,17 +23,20 @@ Depois eu faço.
 ## Sintaxe de Definição de Classes
 
 ### Resumo Simplificado:
-Para definirmos uma classe, precisamos estabelecer algum conceito, como no exemplo:
+Tem basicamente como função dar o nome às variáveis da classe, isso será explicado com mais precisão na parte de métodos.
 
+
+### Resumo Expandido:
+Quando a definição de classes começa, é criado um espaço de nomes, onde são atribuídas as variáveis locais. 
+Quando tudo ocorre normalmente, o objeto classe é criado.
 ~~~python
 class Atleta:
+	
 
-	def __init__(proprio, nome='Jean Pyerre'):
-	  proprio.nome = nome
+
+
 
 ~~~
-### Resumo Expandido:
-...
 
 ## Objetos de Class
 
@@ -41,11 +44,19 @@ class Atleta:
 Duas operações: referências a atributos e instanciação.
 
 *Referências a atributos:* Define o resultado à variável local.
-
-*Instanciação*: Gera um objeto vazio, classe pode determinar um método importante, o ____init____.
+*Instanciação*: Gera um objeto vazio, classe pode determinar um método importante, o __init__.
 
 ### Resumo Expandido:
-...
+~~~python
+class Atleta:
+
+	def __init__(proprio, nome='Jean Pyerre', time='Avaí'):
+	  proprio.nome = nome
+
+	def get_nome(proprio) :
+	  return proprio.nome
+
+~~~
 
 ## Objetos de Instância
 
