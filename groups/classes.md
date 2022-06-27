@@ -44,6 +44,7 @@ class Atleta:
 Duas operações: referências a atributos e instanciação.
 
 *Referências a atributos:* Define o resultado à variável local.
+
 *Instanciação*: Gera um objeto vazio, classe pode determinar um método importante, o __init__.
 
 ### Resumo Expandido:
@@ -124,6 +125,27 @@ print(pessoa1.origem) # Váriavel "origem" da classe "brasileiro"e
 
 1. Crie uma classe qualquer com pelo menos um método, instancie essa classe e imprima o retorno desse método através da instância.
 
+2. Considerando o código abaixo(pego na documentação python), assinale o que será IMPRESSO na tela?
+
+~~~python
+class MyClass:
+    """A simple example class"""
+    i = 12345
+
+    def f(self):
+        return 'hello world'
+~~~
+
+a)12345
+
+b)hello world
+
+c)self
+
+d)nada
+
+e)A simple example class
+
 ## Resolução
 
 1.
@@ -134,3 +156,5 @@ def Classe:
 x = Classe()
 print(x.retorna_oi)
 ~~~
+
+2. D
