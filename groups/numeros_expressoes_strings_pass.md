@@ -122,6 +122,49 @@ Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar 
     Process finished with exit code 0
     ```
 # **Formatação de Strigs**
+### Descrição simplificada:
+A formatação de strings é utilizada para organizar a maneira como os dados serão exibidos na saída.
+
+### Descrição detalhada:
+Às vezes, ao final de um código em que são usadas strings, desejamos visualizar a saída de dados contendo uma certa organização, buscando suprir o interesse final do algoritmo.
+Com python, há 3 formas de formatar strings:
+
+#### 1. Metódo format()
+
+* Com argumentos numerados:
+~~~python
+>>> print('{0} e {1}'.format('dor', 'horror'))
+dor e horror
+~~~~
+
+* Com argumentos nomeados
+~~~python
+>>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
+Nós, da 433, adoramos o sor Henry!
+~~~
+
+* Argumentos numerados e nomeados juntos
+~~~python
+>>> print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
+Gestão, Redes e DSPI
+~~~
+
+* Com o uso de dicionários usando a notação **
+~~~python
+tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
+>>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
+Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
+~~~
+
+#### 2. Formatação manual
+~~~python
+codigocodigocodigo
+~~~
+
+#### 3. Formatação de strings à moda antiga
+~~~python
+codigocodigocodigo
+~~~
 
 # **Comando Pass**
 ### Descrição simplificada:
