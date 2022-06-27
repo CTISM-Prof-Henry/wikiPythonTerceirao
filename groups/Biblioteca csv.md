@@ -88,7 +88,7 @@ with open('arquivo.csv', 'w') as csv file:
 
 linhas = csv.reader(arquivo.csv)
 
-for linhas in linha:
+for linha in linhas:
 	print(linha)
 ~~~~
 
