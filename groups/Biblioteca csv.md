@@ -4,11 +4,14 @@
 
 ### Ex: Formato Tabela
 
-<center>![myImage](https://media.giphy.com/media/lPoxtQlcX30doRbHTN/giphy.gif)</center>
+#### <center> Arquivo Nutela </center>
+<center>![myImage](images/Arquivo%20csv%20raiz.png)</center>
+#### <center> Arquivo Nutela </center>
+<center>![myImage](images/Arquivo%20csv%20nutela.png)</center>
 
 ### Ex: Formato Texto
 
-<center>![myImage](https://media.giphy.com/media/lPoxtQlcX30doRbHTN/giphy.gif)</center>
+<center>![myImage](<center>![myImage](images/Arquivo%20texto.png)</center>)</center>
 
 # Importante
 
