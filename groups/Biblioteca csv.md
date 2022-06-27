@@ -5,13 +5,13 @@
 ### Ex: Formato Tabela
 
 #### <center> Arquivo Nutela </center>
-<center>[myImage](images/Arquivo%20csv%20raiz.png)</center>
+<center>!myImage](images/Arquivo%20csv%20raiz.png)</center>
 #### <center> Arquivo Nutela </center>
-<center>[myImage](images/Arquivo%20csv%20nutela.png)</center>
+<center>!myImage](images/Arquivo%20csv%20nutela.png)</center>
 
 ### Ex: Formato Texto
 
-<center>[myImage](<center>![myImage](images/Arquivo%20texto.png)</center>)</center>
+<center>![myImage](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/)</center>
 
 # Importante
 
