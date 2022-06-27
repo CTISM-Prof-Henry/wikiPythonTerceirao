@@ -1,18 +1,22 @@
 # Laços de Repetição 
 
 ## Explicação Simplificada:
--
--
--
+
+- While e For são estrturas de repetição, que servem para fazer com que uma certa parte do algoritimo se repita nela mesma
+- Range é uma função que serva para criar uma sequência de números iteraveis.
+- Break serve para "quebrar" um laço de repetição, utilizado para parar um laço.
+- Continue tem a função de acabar com a iteração atual do loop do laço e passar para a proxima, pulando qualquer coisa que estiver após, no laço
 
 ## Explicação Detalhada:
 
 ### While:
+
 -
 -
 -
 
 ### For:
+
 -
 -
 -
@@ -186,11 +190,13 @@ Retorna:
 ## Exercícios:
 
 ### Exercício 1:
+
 -
 -
 -
 
 ### Resolução: 
+
 -
 -
 -
@@ -198,8 +204,8 @@ Retorna:
 
 ### Exercício 2:
 - A)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
-a[:50](50 à 99) na tela.
-- B)Faça outro código que imprime a[50:](0 à 49) na tela
+a[:50] na tela.
+- B)Faça outro código que imprime a[50:] na tela
 
 ### Resolução a):
 ~~~Python
