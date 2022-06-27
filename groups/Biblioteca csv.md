@@ -24,7 +24,7 @@ Um arquivo de colunas, as colunas normalmente são separadas por " , ". Geralmen
 import csv
 
 # Abrir/criar o arquivo(teste.csv)
-with open('./arquivo.csv', 'w') as arquivocsv:
+with open('./arquivo.csv', 'w', newline='') as arquivocsv:
 
 # Criando as linhas, separando as colonas por "," '''
 	csv.writer(arquivocsv, delimiter=',').writerow(['Ricardinho', 'Bom'])
@@ -55,7 +55,7 @@ for linha in linhas:
     print(linha)
 
 # Abrirá "arquivo.csv" com modo de leitura
-with open('./arquivo.csv', 'r') as arquivocsv:
+with open('./arquivo.csv', 'r', newline='') as arquivocsv:
 #for para ler as linhas
 	for linhas in csv.reader(arquivocsv):
 		# printa as linhas
@@ -89,16 +89,19 @@ Caractere | Significado
 ~~~~ python
 import csv
 
-with open('./arquivo.csv', 'w') as arquivocsv:
-	csv.writer(arquivocsv, delimiter=',').writerow(['Ricardinho', 'Bom'])
-	csv.writer(arquivocsv, delimiter=',').writerow(['Felipe', 'Bom'])
-	csv.writer(arquivocsv, delimiter=',').writerow(['Henry', 'Bom'])
-	csv.writer(arquivocsv, delimiter=',').writerow(['Guilherme', 'Ruim'])
+with open('arquivo.csv', 'w', newline='') as arquivocsv:
+	obj = csv.writer(arquivocsv, delimiter=' ')
+
+	obj.writerow(['Ricardinho', 'Bom'])
+	obj.writerow(['Felipe', 'Bom'])
+	obj.writerow(['Henry', 'Bom'])
+	obj.writerow(['Guilherme', 'Ruim'])
 
 
-with open('./arquivo.csv', 'r') as arquivocsv:
-	for linhas in csv.reader(arquivocsv):
-		print(linhas)
+with open('arquivo.csv', 'r', newline='') as arquivocsv:
+	reader = csv.reader(arquivocsv)
+	for linhas in reader:
+	  print(linhas)
 ~~~~
 
 ## Quantas linhas terá "arquivo.csv" e quantas linhas retornarão?
