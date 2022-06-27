@@ -121,7 +121,7 @@ Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar 
     
     Process finished with exit code 0
     ```
-# **Formatação de Strigs**
+# **Formatação de Strings**
 ### Descrição simplificada:
 A formatação de strings é utilizada para organizar a maneira como os dados serão exibidos na saída.
 
@@ -131,30 +131,43 @@ Com python, há 3 formas de formatar strings:
 
 #### 1. Metódo format()
 
-* Com argumentos numerados:
+* Uso básico do método format()
+~~~~python
+>>> print('Sou aluno da {} {}'.format('turma', '433'))
+Sou aluno da turma 433
+~~~~
+As chaves vazias são substituídas pelos objetos referenciados no método format()
+
+* `Com argumentos numerados:`
   ~~~python
   >>> print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
+  Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
 
-* Com argumentos nomeados:
+
+* `Com argumentos nomeados:`
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
     ~~~
+  Os argumentos nomeados têm suas posições referenciadas pelo próprio nome do argumento.
 
-* Argumentos numerados e nomeados juntos:
+
+* `Argumentos numerados e nomeados juntos:`
   ~~~python
-  >>> print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
+  >>>print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
   Gestão, Redes e DSPI
   ~~~
 
-* Com o uso de dicionários usando a notação **:
+* `Com o uso de dicionários usando a notação **:`
   ~~~python
-  tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
-  >>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
-  Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
+  >>>dicionario = {'portugues': Saigon, 'biologia': Rosamari, 'filosofia': Zolin, 'historia': Roselene}
+  >>>print('{portugues:d}, {biologia:d}, {filosofia:d}, {historia:d} dão aula no CTISM.'.format(**dicionario))
+  Saigon, Rosamari, Zolin e Roselene dão aula no CTISM.
   ~~~
+  Não há a necessidade de quebrar uma string muito longa, pois pode-se fazer referência à posição dos argumentos com o auxilio de dicionários.
+
 
 #### 2. Formatação manual
   ~~~python
@@ -163,8 +176,11 @@ codigocodigocodigo
 
 #### 3. Formatação de strings à moda antiga
 ~~~python
-codigocodigocodigo
+>>>notas = "tirei %1.1f na prova de genética e %d na prova de literatura"
+>>>print(notas % (4, 8))
+tirei 4.0 na prova de genética e 8 na prova de literatura
  ~~~
+O operador % (módulo) é usado na formatação de strings por meio de interpolação de strings. Esse processo ocorre quando as instâncias da expressão `'string % valores'`, que estão em formato de strings, são substituídas por números.
 
 # **Comando Pass**
 ### Descrição simplificada:
