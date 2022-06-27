@@ -52,6 +52,7 @@ in e not in são operadores de menor prioridade em comparação aos operadores n
 
 # Exercícios
 1 - Construa um dicionário e percorra-o a procura de uma chave de valor 'ele gosta', caso não haja este valor exiba na tela cavalo:
+
 2 - Crie um dicionário utilizando 3 cartas de um baralho espanhol, onde o naipe é o valor, e verifique se o jogador possui uma flor.  
 
 # Resolução
