@@ -207,7 +207,7 @@ imprime('olá mundo!', caixa_alta=False)  # vai imprimir 'olá mundo!'
 imprime('Olá Mundo!', caixa_alta=False)  # vai imprimir 'olá mundo!'
 imprime('olá mundo!', caixa_alta=True)  # vai imprimir 'OLÁ MUNDO!'
 ```
-*Resolução
+* Resolução
 ```python
 def imprime(texto, caixa_alta=False):
 	if caixa_alta == False:
