@@ -1,4 +1,15 @@
+# Números e expressões aritméticas, Formatação de Strings e Comando Pass
+
+## Sumário:
+1. [Números e expresões aritméticas](#nmeros-e-expresses-aritmticas)
+2. [Formatação de Strings](#formatao-de-strings)
+3. [Comando Pass](#comando-pass)
+4. [Exercícios](#exerccios)
+5. [Resoluções](#resolues)
+
+
 # **Números e expressões aritméticas**
+
 ### Descrição simplificada:
 Os dados numéricos utilizados em códigos Python podem ser: int (inteiro) e float (ponto flutuante). Esses números junto de operadores aritméticos, são capazes de realizar operações matemáticas.
  
