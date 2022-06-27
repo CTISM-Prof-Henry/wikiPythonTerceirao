@@ -131,16 +131,16 @@ Com python, há 3 formas de formatar strings:
 
 #### 1. Metódo format()
 
-* Uso básico do método format()
+* `Uso básico do método format():`
 ~~~~python
->>> print('Sou aluno da {} {}'.format('turma', '433'))
+>>>print('Sou aluno da {} {}'.format('turma', '433'))
 Sou aluno da turma 433
 ~~~~
 As chaves vazias são substituídas pelos objetos referenciados no método format()
 
 * `Com argumentos numerados:`
   ~~~python
-  >>> print('{0} e {1}'.format('dor', 'horror'))
+  >>>print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
   Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
@@ -162,9 +162,9 @@ As chaves vazias são substituídas pelos objetos referenciados no método forma
 
 * `Com o uso de dicionários usando a notação **:`
   ~~~python
-  >>>dicionario = {'portugues': Saigon, 'biologia': Rosamari, 'filosofia': Zolin, 'historia': Roselene}
-  >>>print('{portugues:d}, {biologia:d}, {filosofia:d}, {historia:d} dão aula no CTISM.'.format(**dicionario))
-  Saigon, Rosamari, Zolin e Roselene dão aula no CTISM.
+  tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
+  >>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
+  Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
   ~~~
   Não há a necessidade de quebrar uma string muito longa, pois pode-se fazer referência à posição dos argumentos com o auxilio de dicionários.
 
