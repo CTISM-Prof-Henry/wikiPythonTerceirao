@@ -11,7 +11,7 @@
 
 ### Ex: Formato Texto
 
-![Formatotexto](images/Arquivo%20texto.png)
+![Formatotexto](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/Aquivo%20texto.png)
 
 # Importante
 
