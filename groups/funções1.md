@@ -43,7 +43,7 @@ Usamos a sigla def para definir uma função. Em seguida, nomeamos a mesma e adi
 No exemplo, o X é o parâmetro:
 
 ```python	
-def funçao (X): 
+def funcao (X): 
 ```
 
 São 3 partes principais que a constituem:
@@ -80,8 +80,8 @@ O *corpo* é *return a * b*.
 
 ### ARGUMENTOS COM VALOR PADRÃO:
 
-*Argumentos* são os valores que são passados para uma função. E *padrão* é algo que não se altera..
- Então os *argumentos com valor *padrão*possuem valores constantes. 
+Argumentos são os valores que são passados para uma função. E padrão é algo que não se altera.
+ Então os argumentos com valor padrão possuem valores constantes. 
  ```python
 n1 = 10 #valor padrão para n1.
 n2 = 6 #valor padrão para n2.
@@ -98,13 +98,13 @@ resultado = soma(n1,n2) #n1 e n2 são argumentos que estou passando para a funç
 print("O resultado de n1 + n2 é %d" % resultado) #imprime o resultado de n1 + 2.
 ```
 
-### IMPORTANTE: Valores padrões são avaliados uma vez. Quando o valor é algo mutável, como uma lista, pode-se fazer diferença
+##### IMPORTANTE: Valores padrões são avaliados uma vez. Quando o valor é algo mutável, como uma lista, pode-se fazer diferença
 
 
 ### ARGUMENTOS NOMEADOS:
 
-#### Argumento posicional
-é um argumento passado para a função por posição. 
+#### Argumento Posicional:
+É um argumento passado para a função por posição. 
 ~~~~python
 def funcao(a, b):
 	print(a, b)
@@ -113,7 +113,7 @@ funcao(1, 2)
 ~~~~
 Na função são passados dois parâmetros, a e b e os valores foram passados em *funcao(1, 2)*, então a = 1 e b = 2. Eles são argumentos posicionais.
 
-#### Argumento nomeado 
+#### Argumento Nomeado:
 são argumentos que passamos por nome para a função. 
 ~~~~python
 def funcao(a, b):
@@ -135,7 +135,7 @@ O interpretador python ele não reconhece esses comentários como um comando exe
 * Deve iniciar com letra maiúscula e terminar com ponto final.
 * Falhar uma linha se a explicação tiver mais de uma, e o inicio da frase deve ser iniciada em baixo da identação das aspas. 
 
-Ex:
+Exemplo:
 ~~~~python
 def soma(a, b):
     print (a + b)
@@ -166,7 +166,7 @@ print("Resto da divisão é: ", resto_divisao())
 ~~~~
 
 2 - O xaropinho não frequentou o ensino fundamental e não sabe fazer cálculos matemáticos, e ele quer sua ajuda! Ele pediu para você fazer uma calculadora em python que peça dois números e mostre a soma, divisão, subtração, quadrado do primeiro e do segundo e multiplicação. Ele quer que você sofra, então quer que seja feita uma função para cada cálculo, e exiba na tela os resultados. 
-*Resolução
+* Resolução
 ```python
 def soma(n1, n2):
 	return n1 + n2
