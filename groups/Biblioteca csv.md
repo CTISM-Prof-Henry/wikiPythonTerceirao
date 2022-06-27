@@ -92,7 +92,7 @@ for linha in linhas:
 	print(linha)
 ~~~~
 
-## Quantas linhas terão o "arquivo.csv" e quantas linhas retornarão?
+## Quantas linhas terá "arquivo.csv" e quantas linhas retornarão?
 
 A) 4, 4
 B) 4, 2
