@@ -6,7 +6,7 @@
 * Estrutura:
 	* Declaração de um nome;
 	* Assinatura: parâmetro e retorno;
-	*Por fim, o corpo.
+	* Por fim, o corpo.
 
 
 ### Argumentos com valor padrão:
@@ -57,10 +57,11 @@ São 3 partes principais que a constituem:
              
 * Corpo: É o processamento, isto é, o que a função está fazendo, as linhas entre sua definição e a saída. 
 
-
 Exemplo:
+
 A função possui um corpo, uma forma que sempre deve ser seguida. 
-````python
+
+```python
 def multiplicacao(a, b):
     return a * b
 
@@ -166,7 +167,7 @@ print("Resto da divisão é: ", resto_divisao())
 
 2 - O xaropinho não frequentou o ensino fundamental e não sabe fazer cálculos matemáticos, e ele quer sua ajuda! Ele pediu para você fazer uma calculadora em python que peça dois números e mostre a soma, divisão, subtração, quadrado do primeiro e do segundo e multiplicação. Ele quer que você sofra, então quer que seja feita uma função para cada cálculo, e exiba na tela os resultados. 
 *Resolução
-~~~~python
+```python
 def soma(n1, n2):
 	return n1 + n2
 
@@ -195,7 +196,7 @@ print("A divisão é:", divisao(n1, n2))
 print("A multiplicaçao é", vezes(n1, n2))
 print("o quadrado do numero ", n1 , "é", quadrado1(n1))
 print("o quadrado do numero ", n2 , "é", quadrado1(n2))
-~~~~
+```
 
 3- Escreva uma função que recebe dois parâmetros, `texto` e `caixa_alta`. O parâmetro `texto` **não possui** valor padrão, porém o parâmetro `caixa_alta` possui o valor padrão `False`. Esta função deve imprimir o texto `texto` na tela. Quando `caixa_alta = True`, o texto impresso deve ser em MAIÚSCULAS. Quando `caixa_alta = False`, o texto deve ser impresso (todo ele) em minúsculas (independente do usuário tê-lo digitado em minúsculas ou não). Observe os exemplos:
 
