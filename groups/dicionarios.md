@@ -67,3 +67,24 @@ if __name__=='__main__':
 	main()
 ~~~~~
 
+1 - #2 - Crie um dicionário utilizando 3 cartas de um baralho espanhol, onde o naipe é o valor, e verifique se o jogador possui uma flor.  
+2.  
+~~~~~python
+def main():
+
+	mao = {'carta_1': 'copas', 'carta_2': 'copas', 'carta_3': 'copas'}
+
+	contador = 0
+	for valores in mao.values():
+		if valores == valores:
+			contador += 1  
+	
+
+	if contador == 3:
+		print("FLOR")
+
+
+
+if __name__ == '__main__':
+	main()
+~~~~~
