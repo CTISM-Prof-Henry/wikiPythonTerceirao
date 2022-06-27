@@ -45,7 +45,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 4. [Classes](groups/classes.md)
 5. [Listas](groups/Listas.md)
 6. [Laços de Repetição](groups/Lacos_de_repeticao.md)
-7. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/uncoes-parametros-lambdas-argumentos.md)
+7. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
 
 ### Introdução
 
