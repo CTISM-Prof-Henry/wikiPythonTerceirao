@@ -213,7 +213,7 @@ Conjuntos:
 Intersecção dos conjuntos:
 {'amarelo'}
 ```
-* 3: Crie um programa que encontre as diferenças entre as listas. 
+* 3: Crie um programa que encontre as diferenças entre os conjuntos. 
 
 - `entrada`
 ```
