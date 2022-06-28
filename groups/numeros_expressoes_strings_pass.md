@@ -130,7 +130,7 @@ A formatação de strings é utilizada para organizar a maneira como os dados se
 Às vezes, ao final de um código em que são usadas strings, desejamos visualizar a saída de dados contendo uma certa organização, buscando suprir o interesse final do algoritmo.
 Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** formas
 
-#### 1. Metódo format()
+#### 1. Metódo format( )
 
 
 * `Uso básico do método format():`
@@ -142,28 +142,20 @@ Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** for
 
 
 * `Com argumentos numerados:`
+
   ~~~python
   >>>print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
-  Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
+
+  Os objetos presentes no método format( ) podem ser referenciados por números, tendo suas posições numeradas.
 
 
 * `Com argumentos nomeados:`
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
-    ~~~
-  Os argumentos nomeados têm suas posições referenciadas pelo próprio nome do argumento.
-
-
-* `Argumentos numerados e nomeados juntos:`
-  ~~~python
-  >>>print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
-  Gestão, Redes e DSPI
-  ~~~
-
-
+  
 * `Com o uso de dicionários usando a notação **:`
   ~~~python
   tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
@@ -274,7 +266,10 @@ de um ônibus do transporte coletivo de Santa Maria. Considerando:
     * o valor de y, com 3 casas após a vírgula
     * o resultado da divisão inteira de A por B
 
-3. (camille)
+#### 3. Faça um programa que imprima na tela todas as turmas dos cursos técnicos integrados que tem no CTISM e seus números de identificação referentes. 
+* Exemplo: Terceiro ano da informática: 433
+
+#### O programa deve utilizar o método format( ) e a notação **.
 
 # Resoluções: 
 1.
@@ -298,9 +293,29 @@ x = a%b
 y = a/b
 inteira = a//b
 
+<<<<<<< HEAD
+#Exercícios:
+1. (sobre números)
+2. (sobre strings)
+3. 
+=======
 resultado = ('X é igual a %d, y é igual a %1.3f e o resultado da divisão inteira de A por B é %d')
 print(resultado % (x, y, inteira))
 ~~~~~~
-3. 
 
+3.
+~~~~python
+turmas = {'primeiro_eletro': 411, 'segundo_eletro': 421, 'terceiro_eletro': 431,
+          'primeiro_mec': 412, 'segundo_mec': 422, 'terceiro_mec': 432,
+          'primeiro_info': 413, 'segundo_info': 423, 'terceiro_info': 433}
 
+print('Eletrotécnica'
+      '\nPrimeiro ano: {primeiro_eletro:d} \nSegundo ano: {segundo_eletro:d} '
+      '\nTerceiro ano: {terceiro_eletro:d}'
+      '\n\nMecânica'
+      '\nPrimeiro ano: {primeiro_mec:d} \nSegundo ano: {segundo_mec:d} '
+      '\nTerceiro ano: {terceiro_mec:d}'
+      '\n\nInformática'
+      '\nPrimeiro ano: {primeiro_info:d} \nSegundo ano: {segundo_info:d} '
+      '\nTerceiro ano: {terceiro_info:d}'.format(**turmas))
+~~~~

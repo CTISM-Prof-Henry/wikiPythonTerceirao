@@ -1,25 +1,4 @@
-
-
-## Classes
-tales humilde
-
-### Resumo simplificado
-
-Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
-
-Sua estrutura é: <br>
-~~~python
-try:
-    print("estamos tentando")
-except:
-    print("não deu, estamos tratando")
-~~~
-
-### Resumo expandido
-
-Depois eu faço.
-
-
+# Classes
 
 ## Sintaxe de Definição de Classes
 
@@ -34,12 +13,9 @@ Quando tudo ocorre normalmente, o objeto classe é criado.
 class Atleta:
 	
 
-
-
-
 ~~~
 
-## Objetos de Class
+## Objetos de Classe
 
 ### Resumo Simplificado:
 Duas operações: referências a atributos e instanciação.
@@ -85,7 +61,7 @@ Métodos podem ser invocados logo após serem referenciados. Utilizaremos como e
 def f(self):
     return 'Olá Mundo!'
 ~~~
-Para referenciá-lo utlizamos `x.f`.
+Para referenciá-lo utilizamos `x.f`.
 Normalmente métodos são invocados logo após serem referenciados. Se digitarmos print(x.f()), será exibida a string `'Olá Mundo!'`.
 Porém, como `x.f` também é um objeto, ele pode ser armazenado e invocado posteriormente. Por exemplo:
 ~~~python
@@ -129,7 +105,6 @@ pessoa2 = brasileiro('SP', 'Ayrton Senna', 49539261880)
 Diferentes informações adicionais sobre classes e suas sintaxes.
 * <i>self</i> não é uma palavra reservada
 *  Entre variáveis de Classe e Instância com o mesmo nome, a prioridade será da Instância.
-* 
 
 ### Resumo Expandido
 
@@ -141,7 +116,7 @@ class tuberculo():
 		
 h1 = tuberculo(nome='batata')
 ~~~
-* Variáveis de Classe e Instância com o mesmo nome são possíveis de ocorrer na mesma classe, entretanto apenas o valor da variável de instância será retornada. No código abaixo, o humano altera a <i>origem</i> <i>america</i>, e o segundo <i>brasil</i>. Outro Objeto pessoa teria <i>origem</i> = america.
+* Variáveis de Classe e Instância com o mesmo nome são possíveis de ocorrer na mesma classe, entretanto apenas o valor da variável de instância será retornada. No código abaixo, o humano sobrepõe <i>origem</i> = america por <i>brasil</i>. Outros Objetos continuam tendo <i>origem</i> = america.
 ~~~python
 class pessoa:
 		origem = "america"
@@ -153,7 +128,7 @@ humano.origem = "brasil"
 
 1. Crie uma classe qualquer com pelo menos um método, instancie essa classe e imprima o retorno desse método através da instância.
 
-2. Considerando o código abaixo(pego na documentação Python), assinale o que será IMPRESSO na tela?
+2. Considerando o código abaixo, assinale o que será IMPRESSO na tela?
 
 ~~~python
 class ClasseTeste:
@@ -168,11 +143,40 @@ class ClasseTeste:
 A) 561237
 B) Hello World
 C) self
-D) <i>nada</i>
+D) Nada
 E) Classe Qualquer
 </pre>
 
-3.
+3. Considerando os dois códigos abaixo, qual imprimirá na tela o nome de uma música famosa? Qual é ela? 
+~~~python
+#Código 1
+class musica:
+	def __init__(self, nome=str(), lancamento=int()):
+	    self.nome = nome
+	    self.lancamento = lancamento
+
+smells_like_teen_spirit = musica("Smells Like Teen Spirit", 1991)
+
+eh_o_amor = smells_like_teen_spirit
+eh_o_amor.nome = "É o Amor"
+
+print(eh_o_amor.nome)
+~~~
+
+~~~python
+#Código 2
+class musica:
+    nome="Na Boquinha da Garrafa"
+    def __init__(self, nome=str(), lancamento=int()):
+	    self.nome = nome
+	    self.lancamento = lancamento
+
+good_for_you = musica(lancamento=2021)
+
+smells_like_teen_spirit = good_for_you
+
+print(good_for_you.nome)
+~~~
 
 ## Resolução
 
@@ -186,3 +190,4 @@ print(x.retorna_oi)
 ~~~
 
 2. D
+3. Código 1 mostrará na tela a música É o Amor. Código 2 irá priorizar o valor da Variável de Instância <i>nome</i>, mas como não foi definida, não mostrará nada na tela.

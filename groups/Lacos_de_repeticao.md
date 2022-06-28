@@ -9,24 +9,110 @@
 
 ## Explicação Simplificada:
 
-- While e For são estrturas de repetição, que servem para fazer com que uma certa parte do algoritimo se repita nela mesma
-- Range é uma função que serva para criar uma sequência de números iteraveis.
-- Break serve para "quebrar" um laço de repetição, utilizado para parar um laço.
-- Continue tem a função de acabar com a iteração atual do loop do laço e passar para a proxima, pulando qualquer coisa que estiver após, no laço
+- While e For são estrturas de repetição, que servem para fazer com que uma certa parte do algoritmo se repita nela mesma.
+- Range é uma função que serve para criar uma sequência de números iteráveis.
+- Break serve para "quebrar" um laço de repetição. É utilizado para parar um laço.
+- Continue tem a função de acabar com a iteração atual do loop do laço e passar para a próxima, pulando qualquer coisa que estiver após, no laço.
 
 ## Explicação Detalhada:
 
 ### While:
 
--
--
--
+#### Explicação:
+O While é uma estrutura de repetição usada para que determinado comando seja realizado enquanto uma determinada condição for satisfeita. 
+
+#### Exemplo 1: 
+
+```python
+num = 1
+while (num != 0):
+	print(num)
+	num = int(input('Digite um número: '))
+```
+```python
+Retorna:
+1
+Digite um número: 2
+2
+Digite um número: 10
+10
+Digite um número: 0
+Process finished with exit code 0
+```
+Neste exemplo o laço irá se repetir enquanto a variável num for diferente de 0. Quando ela for 0, o laço irá parar.
+
+#### Exemplo 2:
+
+```python
+ratinho = input('Digite um efeito sonoro do ratinho: ')
+while ratinho:
+	input('Digite um efeito sonoro do ratinho: ')
+```
+```python
+Retorna:
+Digite um efeito sonoro do ratinho: UEEPAAAAA
+Digite um efeito sonoro do ratinho: RAPAIZZZZ
+Digite um efeito sonoro do ratinho: PARE!
+Digite um efeito sonoro do ratinho:
+```
+Neste exemplo o while será infinito, pois o input não está colocando o que é digitado na variável. O mesmo poderia acontecer no exemplo 1, caso não houvesse "num = int(input('Digite um número: '))", o programa iria imprimir 1 infinitamente. Assim:
+```python
+num = 1
+while (num != 0):
+	print(num)
+```
+```python
+Retorna: 1 1 1 1 1 1 1 1 1 1 1 1 ...
+```
 
 ### For:
+#### Explicação
+O for é uma estrutura de repetição usada para fazer repetições controladas, determinando quando começa e quando termina. Aceita listas e strings.
 
--
--
--
+#### Exemplo 1.1:
+
+```python
+for i in range(10):
+	print(i)
+```
+```python
+Saída: 0 1 2 3 4 5 6 7 8 9
+```
+Neste caso foi pedido que ocorram 10 interações e, por padrão, o python começa pelo 0 e irá até o 9.
+
+#### Exemplo 1.2:
+
+```python
+for i in range(4, 10)
+	print(i)
+```
+```python
+Saída: 4 5 6 7 8 9
+```
+
+O primeiro parâmetro do range determina onde irá começar e o segunda onde ele irá terminar. Aqui, ele irá até 9, pois, em python, ele não inclui o último valor. 
+
+#### Exemplo 1.3:
+
+```python
+for i in range(4, 10, 2)
+	print(i)
+```
+```python
+Saída: 4 6 8
+```
+O terceiro parâmetro irá determinar o "passo" que ele dará, neste caso, ele irá "pular" de 2 em 2. 
+
+#### Exemplo 2:
+```python
+ratinho = ['UEPA', 'RAPAIZ', 'PARE!']
+for audio in ratinho:
+	print(audio)
+```
+```python
+Saída: UEPA RAPAIZ PARE!
+```
+O for também funciona para interagir com os elementos dentro de uma lista, neste caso ele apenas exibe cada elemento na tela.
 
 ### Função Range:
 
@@ -198,17 +284,23 @@ Retorna:
 
 ### Exercício 1:
 
--
--
--
-
+Escolha um número, então faça com que o código peça um número até que o usuário acerte o número escolhido. Utilize While.
+#### Exemplo de saída:
+~~~Python
+Digite um número: 1
+Digite um número: 7
+Digite um número: 12
+Digite um número: 0
+ACERTOU!!!
+~~~
 ### Resolução: 
+~~~Python
+num = 1
+while (num != 0):
+    num = int(input('Digite um número: '))
 
--
--
--
-
-
+print('ACERTOU!!!!')
+~~~
 ### Exercício 2:
 - a)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
 a[:50] na tela.
