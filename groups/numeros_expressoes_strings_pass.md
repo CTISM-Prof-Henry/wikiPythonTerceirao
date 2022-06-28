@@ -131,17 +131,20 @@ Com python, há 3 formas de formatar strings:
 
 #### 1. Metódo format()
 
+* Uso básico do método format()
+
 * Com argumentos numerados:
   ~~~python
   >>> print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
+As chaves e o que está dentro delas
 
 * Com argumentos nomeados:
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
-    ~~~
+   ~~~
 
 * Argumentos numerados e nomeados juntos:
   ~~~python
@@ -236,6 +239,4 @@ Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trech
 #Exercícios:
 1. (sobre números)
 2. (sobre strings)
-3. (sobre pass)
-
-
+3. 
