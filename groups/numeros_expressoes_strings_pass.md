@@ -132,6 +132,11 @@ Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** for
 
 #### 1. Metódo format()
 
+<<<<<<< HEAD
+* Uso básico do método format()
+
+* Com argumentos numerados:
+=======
 
 * `Uso básico do método format():`
   ~~~~python
@@ -142,19 +147,28 @@ Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** for
 
 
 * `Com argumentos numerados:`
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
   ~~~python
   >>>print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
+<<<<<<< HEAD
+As chaves e o que está dentro delas
+=======
   Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
 
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
 
 * `Com argumentos nomeados:`
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
+<<<<<<< HEAD
+   ~~~
+=======
     ~~~
   Os argumentos nomeados têm suas posições referenciadas pelo próprio nome do argumento.
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
 
 
 * `Argumentos numerados e nomeados juntos:`
@@ -274,7 +288,10 @@ de um ônibus do transporte coletivo de Santa Maria. Considerando:
     * o valor de y, com 3 casas após a vírgula
     * o resultado da divisão inteira de A por B
 
-3. (camille)
+####3. Faça um programa que imprima na tela todas as turmas dos cursos técnicos integrados que tem no CTISM e seus números de identificação referentes. 
+* Exemplo: Terceiro ano da informática: 433
+
+####O programa deve utilizar o método format( ) e a notação **.
 
 # Resoluções: 
 1.
@@ -298,9 +315,29 @@ x = a%b
 y = a/b
 inteira = a//b
 
+<<<<<<< HEAD
+#Exercícios:
+1. (sobre números)
+2. (sobre strings)
+3. 
+=======
 resultado = ('X é igual a %d, y é igual a %1.3f e o resultado da divisão inteira de A por B é %d')
 print(resultado % (x, y, inteira))
 ~~~~~~
-3. 
 
+3.
+~~~~python
+turmas = {'primeiro_eletro': 411, 'segundo_eletro': 421, 'terceiro_eletro': 431,
+          'primeiro_mec': 412, 'segundo_mec': 422, 'terceiro_mec': 432,
+          'primeiro_info': 413, 'segundo_info': 423, 'terceiro_info': 433}
 
+print('Eletrotécnica'
+      '\nPrimeiro ano: {primeiro_eletro:d} \nSegundo ano: {segundo_eletro:d} '
+      '\nTerceiro ano: {terceiro_eletro:d}'
+      '\n\nMecânica'
+      '\nPrimeiro ano: {primeiro_mec:d} \nSegundo ano: {segundo_mec:d} '
+      '\nTerceiro ano: {terceiro_mec:d}'
+      '\n\nInformática'
+      '\nPrimeiro ano: {primeiro_info:d} \nSegundo ano: {segundo_info:d} '
+      '\nTerceiro ano: {terceiro_info:d}'.format(**turmas))
+~~~~
