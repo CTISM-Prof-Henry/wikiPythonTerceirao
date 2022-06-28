@@ -244,7 +244,7 @@ Desta forma, ainda que falte o "print('3')" na linha 5, que faria com que a saí
     4
     Viu?
     
-Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trecho ainda não implementado.
+Ainda obtemos uma saída, e não uma mensagem de erro devido a um trecho ainda não implementado.
 
 
 
@@ -268,8 +268,8 @@ de um ônibus do transporte coletivo de Santa Maria. Considerando:
 #### 2. Observe abaixo um exemplo de uma conta de divisão simples
 ![divisao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/contadivisao.png)
 ##### Escreva um código que:
- Peça para o usuário um valor tipo int qualquer para A e B
-Utilizando formatação de strings, imprima na tela uma string mostrando:
+-> Peça para o usuário um valor tipo int qualquer para A e B
+-> Utilizando formatação de strings, imprima na tela uma string mostrando:
 * o valor de x
 * o valor de y, com 3 casas após a vírgula
 * o resultado da divisão inteira de A por B
