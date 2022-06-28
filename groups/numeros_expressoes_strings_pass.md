@@ -130,13 +130,8 @@ A formatação de strings é utilizada para organizar a maneira como os dados se
 Às vezes, ao final de um código em que são usadas strings, desejamos visualizar a saída de dados contendo uma certa organização, buscando suprir o interesse final do algoritmo.
 Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** formas
 
-#### 1. Metódo format()
+#### 1. Metódo format( )
 
-<<<<<<< HEAD
-* Uso básico do método format()
-
-* Com argumentos numerados:
-=======
 
 * `Uso básico do método format():`
   ~~~~python
@@ -147,37 +142,20 @@ Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** for
 
 
 * `Com argumentos numerados:`
->>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
+
   ~~~python
   >>>print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
-<<<<<<< HEAD
-As chaves e o que está dentro delas
-=======
-  Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
 
->>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
+  Os objetos presentes no método format( ) podem ser referenciados por números, tendo suas posições numeradas.
+
 
 * `Com argumentos nomeados:`
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
-<<<<<<< HEAD
-   ~~~
-=======
-    ~~~
-  Os argumentos nomeados têm suas posições referenciadas pelo próprio nome do argumento.
->>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
-
-
-* `Argumentos numerados e nomeados juntos:`
-  ~~~python
-  >>>print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
-  Gestão, Redes e DSPI
-  ~~~
-
-
+  
 * `Com o uso de dicionários usando a notação **:`
   ~~~python
   tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
