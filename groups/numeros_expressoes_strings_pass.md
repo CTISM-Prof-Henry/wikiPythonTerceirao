@@ -266,10 +266,10 @@ de um ônibus do transporte coletivo de Santa Maria. Considerando:
     * o valor de y, com 3 casas após a vírgula
     * o resultado da divisão inteira de A por B
 
-####3. Faça um programa que imprima na tela todas as turmas dos cursos técnicos integrados que tem no CTISM e seus números de identificação referentes. 
+#### 3. Faça um programa que imprima na tela todas as turmas dos cursos técnicos integrados que tem no CTISM e seus números de identificação referentes. 
 * Exemplo: Terceiro ano da informática: 433
 
-####O programa deve utilizar o método format( ) e a notação **.
+#### O programa deve utilizar o método format( ) e a notação **.
 
 # Resoluções: 
 1.
