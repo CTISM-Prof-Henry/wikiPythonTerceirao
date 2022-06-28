@@ -1,34 +1,102 @@
 
+# Arquivos
+
+  
+
 # Leitura e escrita de arquivos.
 
-Leitura e escrita de arquivos é a entrada e saída dos dados de um algoritmo, sendo a escrita a entrada e a leitura a saída.   **!**
+  
+
+Sabendo que todo algoritmo/programa necessita de três partes necessárias: entrada, sequência de passos e uma saída, a **leitura** e **escrita** de arquivos é a entrada e saída dos dados de um algoritmo e, a escrita a entrada e a leitura a saída.
+
+
+Para abrir um arquivo em Python usamos a função **open()** que recebe dois parâmetros(ou seja, dois valores): o nome do arquivo a ser aberto e o que queremos fazer com este arquivo, seja escrever ou ler. **!**
+
+  
 
 - **Escrita de dados**
 
+  
+
 Como fazer a escrita em Python?
 
-A entrada de dados pode ocorrer de diversas formas. Sendo elas: por teclado via usuário, linha de comando (cmd) ou cliques em botões ou áreas na tela.
+A escrita de dados pode ocorrer de diversas formas. Sendo elas: por teclado via usuário, linha de comando (cmd) ou cliques em botões ou áreas na tela.
+
+ 
+Considerando pelo teclado ou seja via usuário, usamos o ```print(“”)``` com aspas duplas entre os parênteses ou simples para solicitar algo.
+
+  
+
+Exemplo.:
+
+```
+print(“Digite qual é o seu filme da Disney favorito: ”)
+
+```
+Utilizamos **print()** também para mostrarmos a mensagem na tela.
 
 - **Leitura de dados**
 
-A leitura de dados é
+  
 
-para efetuar a leitura dos dados é necessário ter essa seguinte estrutura:
+Para ler dados digitados pelo teclado, utilizamos a função ```input()```e para efetuar a leitura dos dados é necessário ter a seguinte estrutura:
+```
+input(mensagem: str ) -> str
 
+```
 
-feita de 
-
-Podemos ler um arquivo diretamente 
-
+ 
 **Exemplo.:**
 
+```
+
+input('Digite qual é o seu filme da Disney favorito: ')
+filme = input()
+print("Seu filme favorito da Disney é, ", filme)
+
+ou também,
+
+
+print("Digite qual é o seu filme favorito da Disney:")
+filme = input()
+print("Seu filme favorito da Disney é, ", filme)
+
+```
+
+Resultando em:
+
+````
+Digite qual é o seu filme favorito da Disney: //Solicitação
+Dumbo //Dado recebido pelo usuário
+Seu filme favorito da Disney é, Dumbo //Leitura
+````
+  
+  
+
+A função **input()** sempre lerá strings e caso queira ler um número necessita converter os dados de forma apropriada.
+
+Outra função de leitura de dados é o **readline ()**.
+
+Se caso quer ler dois números inteiros ou arredondados:
+
+**Exemplo.:** 
+
+90 65
+
+Para ser possível ler como inteiro:
+```python
+import sys
+
+peso, idade = map(int, sys.stdin.readline().split())
+
+```
+
+Tornando cada elemento lido para int.
 .
 # Método With
 
 O método With é usado na leitura de dados e garante a finalização de recursos como fechar corretamente um arquivo após a utilização.
 
-Utilizado com fins 
- 
  ```python
 with  open('workfile', encoding="utf-8") as f:
 
@@ -45,16 +113,9 @@ True
  
 Caso não utilize o **With** deve utilizar o **método f.close()** para efetuar a finalização correta e evitar erros mesmo após o fechamento ser bem sucedido.
 
-EXEMPLO f.close
 
-ERRO!
-termina parte lencina
 
-inicia pamela
 
-## Exemplo json com método with (colocar no final)
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in
 
 
 ## Gravando dados estruturados em JSON
