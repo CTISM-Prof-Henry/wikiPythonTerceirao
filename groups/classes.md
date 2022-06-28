@@ -1,22 +1,40 @@
+# Classes
 
-## Classes
-tales humilde
+## Sintaxe de Definição de Classes
 
-### Resumo simplificado
+### Resumo Simplificado:
+Tem basicamente como função dar o nome às variáveis da classe, isso será explicado com mais precisão na parte de métodos.
 
-Exceção ocorre quando algum erro possivelmente esperado ocorre, então ele é tratado e retorna o seu problema, seja erro de valor, tipo, nome, etc... Ou até faz alguma outra coisa.
 
-Sua estrutura é: <br>
+### Resumo Expandido:
+Quando a definição de classes começa, é criado um espaço de nomes, onde são atribuídas as variáveis locais. 
+Quando tudo ocorre normalmente, o objeto classe é criado.
 ~~~python
-try:
-    print("estamos tentando")
-except:
-    print("não deu, estamos tratando")
+class Atleta:
+	
+
 ~~~
 
-### Resumo expandido
+## Objetos de Classe
 
-Depois eu faço.
+### Resumo Simplificado:
+Duas operações: referências a atributos e instanciação.
+
+*Referências a atributos:* Define o resultado à variável local.
+
+*Instanciação*: Gera um objeto vazio, classe pode determinar um método importante, o __init__.
+
+### Resumo Expandido:
+~~~python
+class Atleta:
+
+	def __init__(proprio, nome='Jean Pyerre', time='Avaí'):
+	  proprio.nome = nome
+
+	def get_nome(proprio) :
+	  return proprio.nome
+
+~~~
 
 ## Objetos de Instância
 
@@ -43,7 +61,7 @@ Métodos podem ser invocados logo após serem referenciados. Utilizaremos como e
 def f(self):
     return 'Olá Mundo!'
 ~~~
-Para referenciá-lo utlizamos `x.f`.
+Para referenciá-lo utilizamos `x.f`.
 Normalmente métodos são invocados logo após serem referenciados. Se digitarmos print(x.f()), será exibida a string `'Olá Mundo!'`.
 Porém, como `x.f` também é um objeto, ele pode ser armazenado e invocado posteriormente. Por exemplo:
 ~~~python
@@ -64,25 +82,101 @@ Variável específica para cada objeto da classe.
 
 ### Resumo Expandido
 
+No exemplo a seguir, definimos uma classe <i>brasileiro</i>. Como Variável de Classe  (comum a todos os objetos da classe) temos a variável <i>origem</i>. Desta forma, independente do objeto criado, a variável sempre será 'Brasil' .
+
+Dentro do construtor da classe há as Variáveis de Instância: <i>nome, estado,</i> e <i>cpf</i>. Elas não são constantes entre os Objetos. Assim, os diferentes Objetos possuem Variáveis com o mesmo nome, entretanto seus valores não são obrigatoriamente iguais. No código de demonstração, temos que pessoa1 possui <i>estadoOrigem</i> = "RS" e <i>nome</i> = "Henry", enquanto que pessoa2 tem <i>estadoOrigem</i> = "SP" e <i>nome</i> = "Ayrton Senna". 
+
+Note que a diferença na definição entre uma variável de Instância e Classe está na forma como são declaradas. Na primeira , é necessário fazer referência ao próprio Objeto <i>(self)</i>, e a segunda é definida antes do construtor, sem referência.
+
 ~~~python
 class brasileiro():
-	origem = 'Brasil' # Variável comum a todos os objetos da classe
-	def __init__(proprio, estadoOrigem=str(), nome=str(), cpf=int()):
-		proprio.nome = nome # Variável específica de um objeto
-		proprio.estado = estadoOrigem # Variável específica de um objeto
-		proprio.cpf = cpf # Variável específica de um objeto
+	origem = 'Brasil'
+	def __init__(self, estadoOrigem=str(), nome=str(), cpf=int()):
+		self.nome = nome
+		self.estado = estadoOrigem
+		self.cpf = cpf
 
 pessoa1 = brasileiro('RS', 'Henry', 86960099080)
-
-print(pessoa1.estado) # Variável "estado" do objeto pessoa1
-print(pessoa1.nome) # Variável "nome" do objeto pessoa1
-print(pessoa1.cpf) # Variável "cpf" do objeto pessoa1
-print(pessoa1.origem) # Váriavel "origem" da classe "brasileiro"e
+pessoa2 = brasileiro('SP', 'Ayrton Senna', 49539261880)
 ~~~
 
+## Observações Aleatórias
+### Resumo Simplificado
+Diferentes informações adicionais sobre classes e suas sintaxes.
+* <i>self</i> não é uma palavra reservada
+*  Entre variáveis de Classe e Instância com o mesmo nome, a prioridade será da Instância.
+
+### Resumo Expandido
+
+* O  primeiro parâmetro, utilizado para referenciar o próprio objeto, é por convenção chamado de <i>self</i>. Entretanto, qualquer outro nome de variável funciona da mesma forma.
+~~~python
+class tuberculo():
+	def __init__(planta, nome=str()):
+		planta.nome = nome
+		
+h1 = tuberculo(nome='batata')
+~~~
+* Variáveis de Classe e Instância com o mesmo nome são possíveis de ocorrer na mesma classe, entretanto apenas o valor da variável de instância será retornada. No código abaixo, o humano sobrepõe <i>origem</i> = america por <i>brasil</i>. Outros Objetos continuam tendo <i>origem</i> = america.
+~~~python
+class pessoa:
+		origem = "america"
+
+humano = pessoa()
+humano.origem = "brasil"
+~~~
 ## Exercícios
 
 1. Crie uma classe qualquer com pelo menos um método, instancie essa classe e imprima o retorno desse método através da instância.
+
+2. Considerando o código abaixo, assinale o que será IMPRESSO na tela?
+
+~~~python
+class ClasseTeste:
+    """Classe Qualquer"""
+    i = 561237
+
+    def funcao(self):
+        return 'Hello World'
+~~~
+
+<pre>
+A) 561237
+B) Hello World
+C) self
+D) Nada
+E) Classe Qualquer
+</pre>
+
+3. Considerando os dois códigos abaixo, qual imprimirá na tela o nome de uma música famosa? Qual é ela? 
+~~~python
+#Código 1
+class musica:
+	def __init__(self, nome=str(), lancamento=int()):
+	    self.nome = nome
+	    self.lancamento = lancamento
+
+smells_like_teen_spirit = musica("Smells Like Teen Spirit", 1991)
+
+eh_o_amor = smells_like_teen_spirit
+eh_o_amor.nome = "É o Amor"
+
+print(eh_o_amor.nome)
+~~~
+
+~~~python
+#Código 2
+class musica:
+    nome="Na Boquinha da Garrafa"
+    def __init__(self, nome=str(), lancamento=int()):
+	    self.nome = nome
+	    self.lancamento = lancamento
+
+good_for_you = musica(lancamento=2021)
+
+smells_like_teen_spirit = good_for_you
+
+print(good_for_you.nome)
+~~~
 
 ## Resolução
 
@@ -94,3 +188,6 @@ def Classe:
 x = Classe()
 print(x.retorna_oi)
 ~~~
+
+2. D
+3. Código 1 mostrará na tela a música É o Amor. Código 2 irá priorizar o valor da Variável de Instância <i>nome</i>, mas como não foi definida, não mostrará nada na tela.

@@ -1,18 +1,29 @@
 # Laços de Repetição 
 
+1. [While](#Funções-Range)
+1. [For](#Funções-Range)
+1. [Função Range](#Função-Range)
+1. [Break](#Break)
+1. [Continue](#Continue)
+1. [Exercícios](#Exercícios)
+
 ## Explicação Simplificada:
--
--
--
+
+- While e For são estrturas de repetição, que servem para fazer com que uma certa parte do algoritimo se repita nela mesma
+- Range é uma função que serva para criar uma sequência de números iteraveis.
+- Break serve para "quebrar" um laço de repetição, utilizado para parar um laço.
+- Continue tem a função de acabar com a iteração atual do loop do laço e passar para a proxima, pulando qualquer coisa que estiver após, no laço
 
 ## Explicação Detalhada:
 
 ### While:
+
 -
 -
 -
 
 ### For:
+
 -
 -
 -
@@ -20,7 +31,7 @@
 ### Função Range:
 
 #### Explicação:
-A função range tem como objetivo retornar um iterador, que também podemos explicar comparando range com if, pois ambas são funções que têm suas ordens a serem executadas.
+A função range tem como objetivo retornar um iterador, que também podemos explicar a comparar range com if, pois ambas são funções que têm as suas ordens a serem executadas.
 
 ```python
 
@@ -186,32 +197,34 @@ Retorna:
 ## Exercícios:
 
 ### Exercício 1:
+
 -
 -
 -
 
 ### Resolução: 
+
 -
 -
 -
 
 
 ### Exercício 2:
--
--
--
+- a)Vamos supor que tenhamos uma lista a, que contém todos os números inteiros entre 0 e 99 (por exemplo, a = [0, 1, 2, 3, ..., 99]). Usando laços de repetição, e NÃO USANDO listas, faça um código que imprime
+a[:50] na tela.
+- b)Faça outro código que imprime a[50:] na tela
 
-### Resolução:
--
--
--
-
-
-### Exercício 3:
--
--
--
-### Resolução: 
--
--
--
+### Resolução a):
+~~~Python
+for i in range(99):
+    if i < 50:
+        continue
+    print(i)
+~~~~
+### Resolução b): 
+~~~python
+for i in range(99):
+    print(i)
+    if i >= 50: 
+        break
+~~~

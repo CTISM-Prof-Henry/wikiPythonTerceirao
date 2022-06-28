@@ -39,12 +39,18 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
 ### Sumário
 
-1. [Introdução](#introdução)
+1. [Números, expressões aritméticas, formatação de strings, comando pass](groups/numeros_expressoes_strings_pass.md)
 2. [Fluxo](groups/fluxo.md)
 3. [Exceções](groups/excecoes.md)
 4. [Classes](groups/classes.md)
 5. [Listas](groups/Listas.md)
 6. [Laços de Repetição](groups/Lacos_de_repeticao.md)
+7. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
+8. Leitura e escrita de arquivos
+  	* [Arquivos](groups/Arquivos.md)
+    * [Biblioteca CSV](groups/Biblioteca%20csv.md)
+  
+9. [Definição de Funções](groups/funções1.md)
 
 ### Introdução
 
@@ -172,3 +178,5 @@ def func():
 ~~~~
 
 <!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
+
+

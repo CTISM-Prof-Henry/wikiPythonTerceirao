@@ -1,4 +1,5 @@
 # **Números e expressões aritméticas**
+
 ### Descrição simplificada:
 Os dados numéricos utilizados em códigos Python podem ser: int (inteiro) e float (ponto flutuante). Esses números junto de operadores aritméticos, são capazes de realizar operações matemáticas.
  
@@ -121,53 +122,77 @@ Os operadores + e - servem tanto para soma e diferença, quanto para demonstrar 
     
     Process finished with exit code 0
     ```
-# **Formatação de Strigs**
+# **Formatação de Strings**
 ### Descrição simplificada:
 A formatação de strings é utilizada para organizar a maneira como os dados serão exibidos na saída.
 
 ### Descrição detalhada:
 Às vezes, ao final de um código em que são usadas strings, desejamos visualizar a saída de dados contendo uma certa organização, buscando suprir o interesse final do algoritmo.
-Com python, há 3 formas de formatar strings:
+Com python, há 3 formas de formatar strings, sendo retratadas aqui **duas** formas
 
 #### 1. Metódo format()
 
+<<<<<<< HEAD
 * Uso básico do método format()
 
 * Com argumentos numerados:
+=======
+
+* `Uso básico do método format():`
+  ~~~~python
+  >>>print('Sou aluno da {} {}'.format('turma', '433'))
+  Sou aluno da turma 433
+  ~~~~
+  As chaves vazias são substituídas pelos objetos referenciados no método format()
+
+
+* `Com argumentos numerados:`
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
   ~~~python
-  >>> print('{0} e {1}'.format('dor', 'horror'))
+  >>>print('{0} e {1}'.format('dor', 'horror'))
   dor e horror
   ~~~~
+<<<<<<< HEAD
 As chaves e o que está dentro delas
+=======
+  Os objetos presentes no método format() podem ser referenciados por números, tendo suas posições numeradas.
 
-* Com argumentos nomeados:
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
+
+* `Com argumentos nomeados:`
   ~~~python
   >>>print('Nós, da {turma}, adoramos o {docente}!'.format(turma='433', docente='sor Henry'))
   Nós, da 433, adoramos o sor Henry!
+<<<<<<< HEAD
    ~~~
+=======
+    ~~~
+  Os argumentos nomeados têm suas posições referenciadas pelo próprio nome do argumento.
+>>>>>>> 88615ef7f1503b51ee93f104eafdd7a1f8a36681
 
-* Argumentos numerados e nomeados juntos:
+
+* `Argumentos numerados e nomeados juntos:`
   ~~~python
-  >>> print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
+  >>>print('{0}, {1} e {other}'.format('Gestão', 'Redes', other='DSPI'))
   Gestão, Redes e DSPI
   ~~~
 
-* Com o uso de dicionários usando a notação **:
+
+* `Com o uso de dicionários usando a notação **:`
   ~~~python
   tabela = {'terceiro': 433, 'segundo': 423, 'primeiro': 413}
   >>> print('Primeiro ano: {primeiro:d}; Segundo ano: {segundo:d}; Terceiro ano: {terceiro:d}'.format(**tabela))
   Primeiro ano: 413; Segundo ano: 423; Terceiro ano: 433
   ~~~
 
-#### 2. Formatação manual
-  ~~~python
-codigocodigocodigo
-  ~~~
 
-#### 3. Formatação de strings à moda antiga
+#### 2. Formatação de strings à moda antiga
 ~~~python
-codigocodigocodigo
+>>>notas = "tirei %1.1f na prova de genética e %d na prova de literatura"
+>>>print(notas % (4, 8))
+tirei 4.0 na prova de genética e 8 na prova de literatura
  ~~~
+O operador % (módulo) é usado na formatação de strings por meio de interpolação de strings. Esse processo ocorre quando as instâncias da expressão `'string % valores'`, que estão em formato de strings, são substituídas por números.
 
 # **Comando Pass**
 ### Descrição simplificada:
@@ -192,9 +217,10 @@ Abaixo, temos um trecho de código incompleto:
   6       print(i)
   7   print('Viu?')
   ~~~~~
-Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes incompletas, como a do exemplo acima, pode resultar em vários erros, dependendo do caso. 
+  Falta acrescentar o que acontece na linha 5. Tentar rodar um código com partes incompletas, como a do exemplo acima, pode resultar em vários erros, dependendo do caso. 
+
 - `saída`
-        
+
         File "C:/Users/exemplo.py", line 6
         print(i)
         ^
@@ -232,11 +258,86 @@ Desta forma, ainda que falte o "print('3')" na linha 5, que faria com que a saí
     4
     Viu?
     
-Ainda obtemos uma saída, sem receber nenhuma mensagem de erro devido a um trecho ainda não implementado.
+Ainda obtemos uma saída, e não uma mensagem de erro devido a um trecho ainda não implementado.
 
 
 
+# Exercícios:
+#### 1. Observe a imagem que representa a equação:
+![equacao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/equacaohoraria.png)
+
+Ao passar exercícios de revisão do 1º ano, o professor de física do CTISM solicitou que os 
+alunos criassem um código que calculasse a Função horária da posição no Movimento Retilíeno Uniforme, para descobrir a posição final
+de um ônibus do transporte coletivo de Santa Maria. Considerando:
+* a posição inicial (So) é nula no instante t;
+* a velocidade (v) de deslocamento deve ser pedida ao usuário em quilômetros por hora;
+* o tempo (t) de viagem deve ser pedida ao usurário em horas.
+
+**Calcule qual a posição final do ônibus no instante de tempo t e imprima na tela:**
+* o valor e o tipo da variável da posição final
+* o valor da velocidade;
+* a quantidade de tempo.
+
+ 
+#### 2. Observe abaixo um exemplo de uma conta de divisão simples:
+![divisao](https://github.com/CTISM-Prof-Henry/wikiPythonTerceirao/blob/main/images/contadivisao.png)
+##### Escreva um código que:
+- Peça para o usuário um valor tipo int qualquer para A e B
+- Utilizando formatação de strings, imprima na tela uma string mostrando:
+    * o valor de x
+    * o valor de y, com 3 casas após a vírgula
+    * o resultado da divisão inteira de A por B
+
+####3. Faça um programa que imprima na tela todas as turmas dos cursos técnicos integrados que tem no CTISM e seus números de identificação referentes. 
+* Exemplo: Terceiro ano da informática: 433
+
+####O programa deve utilizar o método format( ) e a notação **.
+
+# Resoluções: 
+1.
+~~~python
+So = 0
+v = float(input('Digite o valor da velocidade em km/h:'))
+t = float(input('Digite a quantidade de horas da viagem:'))
+
+S = So + (v * t)
+
+print('A posição final é de:', S, 'km e o tipo de variável é:', type(S))
+print('A velocidade era:', v, 'km/h e as horas da viagem foram:', t)
+~~~~
+
+2. 
+~~~~~python
+a = int(input('insira o valor de a:'))
+b = int(input('insira o valor de b:'))
+
+x = a%b
+y = a/b
+inteira = a//b
+
+<<<<<<< HEAD
 #Exercícios:
 1. (sobre números)
 2. (sobre strings)
 3. 
+=======
+resultado = ('X é igual a %d, y é igual a %1.3f e o resultado da divisão inteira de A por B é %d')
+print(resultado % (x, y, inteira))
+~~~~~~
+
+3.
+~~~~python
+turmas = {'primeiro_eletro': 411, 'segundo_eletro': 421, 'terceiro_eletro': 431,
+          'primeiro_mec': 412, 'segundo_mec': 422, 'terceiro_mec': 432,
+          'primeiro_info': 413, 'segundo_info': 423, 'terceiro_info': 433}
+
+print('Eletrotécnica'
+      '\nPrimeiro ano: {primeiro_eletro:d} \nSegundo ano: {segundo_eletro:d} '
+      '\nTerceiro ano: {terceiro_eletro:d}'
+      '\n\nMecânica'
+      '\nPrimeiro ano: {primeiro_mec:d} \nSegundo ano: {segundo_mec:d} '
+      '\nTerceiro ano: {terceiro_mec:d}'
+      '\n\nInformática'
+      '\nPrimeiro ano: {primeiro_info:d} \nSegundo ano: {segundo_info:d} '
+      '\nTerceiro ano: {terceiro_info:d}'.format(**turmas))
+~~~~
