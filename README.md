@@ -1,15 +1,16 @@
 # wikiPythonTerceirao
+
 Wiki de Python do terceiro ano de Técnico em Informática para Internet Integrado ao Ensino Médio do Colégio Técnico Industrial de Santa Maria. Turma de 2022.
 
 ## Do terceirão pra vida!
 
 ![terceirao](images/terceirao.jpg)
 
-# Descrição do trabalho
+## Descrição do trabalho
 
 https://ead06.proj.ufsm.br/mod/assign/view.php?id=1649675
 
-# Problemas resolvendo conflitos no git? 🤠
+## Problemas resolvendo conflitos no git? 🤠
 
 Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
@@ -29,154 +30,23 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 | Miguel Ávila, Nicolas, Tales | Exceções |
 | Davi, Guilherme Einloft, Miguel Brondani | Classes: sintaxe de definição de calsses, objetos de class, objetos instância, objetos método, variáveis de classe e instância, observações aleatórias |
 
-## Não-atribuídos
+### Não-atribuídos
 
-1. Classes: herança múltipla, variáveis privadas, geradores
-2. Módulos
-3. Pacotes
-
-## Exemplo de Wiki
-
-### Sumário
+## Sumário
 
 1. [Números, expressões aritméticas, formatação de strings, comando pass](groups/numeros_expressoes_strings_pass.md)
-2. [Fluxo](groups/fluxo.md)
-3. [Exceções](groups/excecoes.md)
-4. [Classes](groups/classes.md)
-5. [Listas](groups/Listas.md)
-6. [Laços de Repetição](groups/Lacos_de_repeticao.md)
-7. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
-8. Leitura e escrita de arquivos
-  	* [Arquivos](groups/Arquivos.md)
+2. [Controle de Fluxo](groups/fluxo.md)
+3. [Laços de Repetição](groups/Lacos_de_repeticao.md)
+4. [Listas](groups/Listas.md)
+5. [Tuplas e conjuntos](groups/estruturas_de_dados_(tuplas_e_sets).md)
+6. [Dicionários](groups/dicionarios.md)
+7. [Definição de Funções](groups/funções1.md)
+8. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
+9. Manipulação de arquivos 
+    * [Leitura e escrita de arquivos](groups/Arquivos.md)
     * [Biblioteca CSV](groups/Biblioteca%20csv.md)
-  
-9. [Definição de Funções](groups/funções1.md)
-
-### Introdução
-
-#### Resumo simplificado
-
-Python é 🔝
-
-#### Resumo expandido
-
-Sério, Python é muito 🔝
-
-#### Exercícios
-
-1. Abra o console do Python.
-2. Rode um programa Python pelo console.
-3. Rode um script Python pelo console.
-
-#### Resolução
-
-1. Menu Iniciar > prompt de comando > digite `python` e dê Enter
-2. Menu Iniciar > prompt de comando > digite `python` e dê Enter. Digite `print('olá mundo!')`. Feito!
-3. Menu Iniciar > prompt de comando. Digite `python <nome do script>`, e dê Enter.
-
-## [Estrutura de dados (Tuplas e sets)](groups/estruturas_de_dados_(tuplas_e_sets).md)
-### If-Else
-
-#### Resumo simplificado
-
-É if e é else.
-
-#### Resumo expandido
-
-Tem mais coisa, mas não tô afim de escrever agora.
-
-#### Exercícios
-
-Fiquei com preguiça de fazer.
-
-#### Resolução
-
-Depois eu faço.
-
-<!-- comentario apenas para dividir do resto, atenção, area restrita -->
-
-### Fluxo
-
-#### if 
-
-O if é uma estrutura de condição que permite avaliar uma expressão e, de acordo com seu resultado, executar uma determinada ação.
-Sua estrutura é:
-
-~~~~python
-def func():
-	a = int(input('insira valor de A')) # capta um valor para A
-	b = int(input('insira valor de B')) #capta um valor para B
-
-	if b > a: # SE b for maior que A executa o comando
-		print('B é maior que A') 
-
-~~~~
-
-#### elif
-
-Utiliza-se o elif com mesmo intuito do if, porem ele significa uma segunda exceção.
-Sua estrutura é:
-
-~~~~python
-def func():
-	a = int(input('insira valor de A'))
-	b = int(input('insira valor de B'))
-
-	if b > a:
-		print('B é maior que A')
-
-	elif a > b: # OU SE a for maior que b executa o comando
-		print('A é maior que B')
-
-~~~~
-
-#### else
-
-Quando nenhum comportamento específico foi definido para o caso de a condição não ser satisfeita, utiliza-se a estrutura else.
-Sua estrutura é:
-
-~~~~python
-def func():
-	a = int(input('insira valor de A'))
-	b = int(input('insira valor de B'))
-
-	if b > a:
-		print('B é maior que A')
-
-	elif a > b:
-		print('A é maior que B')
-
-	else: # SENAO executar nenhum comando acima, executar o seguinte
-		print('A é igual a B') #igual pois if e elif analisa os valores diferentes
-
-~~~~
-
-#### exercicios 
-
-1. faça um programa o qual peça o valor de três números e mostre o menor deles
-
-##### resolução:
-
-~~~~python
-
-~~~~
-
-2. faça um programa que peça um número, depois mostre se ele é positivo ou negativo, caso nao seja nenhuma das duas opções (seja 0), mostre a mensagem "o numero digitado é (numero digitado)" (utilize else)
-
-##### resolução:
-
-~~~~python
-
-~~~~
-
-3. faça um programa que peça o numero de episodios que o usuario assistiu do programa do ratinho. Se o usuario tiver assistido até 25 episódios, mostre na tela a mensagem "RAPAIZ", se assistiu ate 50, mostre a mensagem "UEPAA", se assistiu mais que 50, exiba a mensagem "RATINHOO"
-
-##### resolução:
-
-~~~~python
-
-~~~~
-
-<!-- comentario apenas para dividir do resto, atenção, saindo da area restrita -->
-
-
+10. [Exceções](groups/excecoes.md)
+11. [Classes](groups/classes.md)
+12. Classes: herança múltipla, variáveis privadas, geradores
+13. Módulos
+14. Pacotes
