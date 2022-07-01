@@ -30,8 +30,6 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 | Miguel Ávila, Nicolas, Tales | Exceções |
 | Davi, Guilherme Einloft, Miguel Brondani | Classes: sintaxe de definição de calsses, objetos de class, objetos instância, objetos método, variáveis de classe e instância, observações aleatórias |
 
-### Não-atribuídos
-
 ## Sumário
 
 1. [Números, expressões aritméticas, formatação de strings, comando pass](groups/numeros_expressoes_strings_pass.md)
