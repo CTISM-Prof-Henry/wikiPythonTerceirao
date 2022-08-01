@@ -20,9 +20,10 @@ são separadas por vírgula, enquanto as linhas são separadas por uma nova linh
 
 ## Sumário
 
-* do
-* it
-* later
+* [Utilizando a biblioteca csv](#utilizando-a-biblioteca-csv)
+* [Criando um arquivo csv](#criando-um-arquivo-csv)
+* [Lendo um arquivo csv](#lendo-um-arquivo-csv)
+* [DictReader](#dictReader)
 
 ## Utilizando a biblioteca csv
 
