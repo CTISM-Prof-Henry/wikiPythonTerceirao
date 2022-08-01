@@ -1,6 +1,6 @@
-# Biblioteca CSV
+# Arquivos CSV
 
-Arquivos CSV (comma separated values, ou valores separados por vírgula, na singla em inglẽs) são arquivos comumente
+Arquivos CSV (comma separated values, ou valores separados por vírgula, na sigla em inglês) são arquivos comumente
 utilizados para tabular informações. 
 
 O formato CSV é utilizado por editores de planilhas, como o Microsoft Excel, Libreoffice Calc, ou então Google 

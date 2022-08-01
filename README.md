@@ -44,7 +44,8 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 7. [Definição de Funções](groups/funções1.md)
 8. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
 9. Manipulação de arquivos 
-    * [Leitura e escrita de arquivos](groups/Arquivos.md)
+    * [Leitura e escrita de arquivos](groups/leitura_escrita_arquivos.md)
+    * [Arquivos JSON](groups/arquivos_json.md)
     * [Arquivos CSV](groups/arquivos_csv.md)
 10. [Exceções](groups/excecoes.md)
 11. [Classes](groups/classes.md)
