@@ -32,7 +32,10 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 
 ## Sumário
 
-1. [Números, expressões aritméticas, formatação de strings, comando pass](groups/numeros_expressoes_strings_pass.md)
+1. Números
+   * [Números e expressões aritméticas](groups/expressões_aritméticas.md)
+   * [Formatação de strings](groups/formatação_strings.md)
+   * [Comando Pass](groups/comando_pass.md)
 2. [Controle de Fluxo](groups/fluxo.md)
 3. [Laços de Repetição](groups/Lacos_de_repeticao.md)
 4. [Listas](groups/Listas.md)
@@ -42,7 +45,7 @@ Tente este repositório: https://github.com/CTISM-Prof-Henry/gitEssentials
 8. [Funções: Parâmetros especiais, Funções anônimas e Listas de argumentos arbitrárias](groups/funcoes-parametros-lambdas-argumentos.md)
 9. Manipulação de arquivos 
     * [Leitura e escrita de arquivos](groups/Arquivos.md)
-    * [Biblioteca CSV](groups/Biblioteca%20csv.md)
+    * [Arquivos CSV](groups/arquivos_csv.md)
 10. [Exceções](groups/excecoes.md)
 11. [Classes](groups/classes.md)
 12. Classes: herança múltipla, variáveis privadas, geradores
