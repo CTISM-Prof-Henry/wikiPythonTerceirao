@@ -7,9 +7,13 @@ matemáticas em Python.
  
 ## Sumário
 
-* do
-* it
-* later
+* [Usando Python como calculadora](#usando-python-como-calculadora)
+* [Números inteiros](#números-inteiros-(int))
+* [Números de ponto flutuante](#números-de-ponto-flutuante-(float))
+* [Conversão de tipos](#conversão-de-tipos)
+* [Verificação de tipos](#verificação-de-tipos)
+* [Expressões aritméticas](#expressões-aritméticas)
+* [Exercícios](#exercícios)
 
 ### Usando Python como calculadora
 
@@ -130,7 +134,7 @@ a será: 6
 b será: -14
 ```
 
-### Exercícios
+## Exercícios
 
 1. Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor
 
